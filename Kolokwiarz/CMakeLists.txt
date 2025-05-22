@@ -21,6 +21,10 @@ qt_add_executable(Kolokwiarz
     core/user.h core/user.cpp
     core/admin.h core/admin.cpp
     core/questioneditor.h core/questioneditor.cpp
+    core/usermanager.h core/usermanager.cpp
+    gui/loginwindow.h gui/loginwindow.cpp gui/loginwindow.ui
+    gui/quizwindow.h gui/quizwindow.cpp gui/quizwindow.ui
+    gui/rankingwindow.h gui/rankingwindow.cpp gui/rankingwindow.ui
 )
 
 target_link_libraries(Kolokwiarz

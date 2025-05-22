@@ -19,6 +19,10 @@ QString User::getUsername() const {
     return username;
 }
 
+QString User::getPassword() const {
+    return password;
+}
+
 int User::getTotalPoints() const {
     return totalPoints;
 }

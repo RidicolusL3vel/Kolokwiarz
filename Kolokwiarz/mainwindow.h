@@ -2,6 +2,12 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "core\usermanager.h"
+#include "core\quizmanager.h"
+#include "core\user.h"
+#include "gui\loginwindow.h"
+#include "gui\quizwindow.h"
+#include "gui\rankingwindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -14,10 +20,29 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
+    explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
 private:
     Ui::MainWindow *ui;
+
+    UserManager* userManager;
+    QuizManager* quizManager;
+    User* currentUser = nullptr;
+
+    LoginWindow* loginWindow;
+    QuizWindow* quizWindow;
+    RankingWindow* rankingWindow;
+
+    void showLoginWindow();
+    void showQuizWindow();
+    void showRankingWindow();
+
+private slots:
+    void onLoginSuccess(User* loggedInUser);
+    void onQuizCompleted();
+    void onRankingRequested();
+    void onLogoutRequested();
+    void onExitRequested();
 };
 #endif // MAINWINDOW_H

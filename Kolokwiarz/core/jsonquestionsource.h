@@ -12,6 +12,7 @@
 
 class JSONQuestionSource : public QuestionSource
 {
+    friend class QuestionEditor; // Allow QuestionEditor to access private members if needed
 private:
     QString filePath;
     QVector<TextQuestion> questions;

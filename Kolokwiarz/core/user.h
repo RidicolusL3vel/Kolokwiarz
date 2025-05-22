@@ -17,6 +17,7 @@ public:
     void addPoints(int pts);
     QString getStats() const;
     QString getUsername() const;
+    QString getPassword() const;
     int getTotalPoints() const;
     int getTotalGames() const;
     QDateTime getLastLogin() const;
