@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-90569beae74c2be00cde.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Testownik",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Testownik::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Testownik-Debug-63acca4d8aacf554c13c.json",
+					"name" : "Testownik",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Testownik_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Testownik_autogen-Debug-a4637d1b57f45436cfbc.json",
+					"name" : "Testownik_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Testownik_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Testownik_autogen_timestamp_deps-Debug-af2846087bbbb580f836.json",
+					"name" : "Testownik_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/LENOVO/Desktop/ProjektTestownika/Testownik/Testownik/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug",
+		"source" : "C:/Users/LENOVO/Desktop/ProjektTestownika/Testownik/Testownik"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

@@ -1,0 +1,9 @@
+# ninja log v6
+39	1625	7687792468916055	Testownik_autogen/timestamp	cda3b70317be5c4
+1644	8314	7687792470587877	CMakeFiles/Testownik.dir/main.cpp.obj	bea0227a57c22612
+8314	9270	7687792537401976	Testownik.exe	83cce2e6d97fe3ce
+39	1625	7687792468916055	Testownik_autogen/mocs_compilation.cpp	cda3b70317be5c4
+39	1625	7687792468916055	C:/Users/LENOVO/Desktop/ProjektTestownika/Testownik/Testownik/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/Testownik_autogen/timestamp	cda3b70317be5c4
+39	1625	7687792468916055	C:/Users/LENOVO/Desktop/ProjektTestownika/Testownik/Testownik/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/Testownik_autogen/mocs_compilation.cpp	cda3b70317be5c4
+1648	8310	7687792470744127	CMakeFiles/Testownik.dir/mainwindow.cpp.obj	abef82547c568e8a
+1639	8292	7687792470587877	CMakeFiles/Testownik.dir/Testownik_autogen/mocs_compilation.cpp.obj	a8b5f774de192ed
