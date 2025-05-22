@@ -2,6 +2,8 @@
 #include <random>
 #include <algorithm>
 
+TextQuestion::TextQuestion() : Question(), correctOptionIndex(0) {}
+
 TextQuestion::TextQuestion(const QString &text, const QStringList &options, int correctOptionIndex)
     : text(text), options(options), correctOptionIndex(correctOptionIndex) {}
 

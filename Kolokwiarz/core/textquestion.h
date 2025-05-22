@@ -19,6 +19,8 @@ public:
     bool isCorrect(int optionIndex) const override;
 
     void shuffleOptions();
+
+    ~TextQuestion() override = default;
 };
 
 #endif // TEXTQUESTION_H
