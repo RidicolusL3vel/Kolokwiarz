@@ -40,9 +40,9 @@ private:
 
 private slots:
     void onLoginSuccess(User* loggedInUser);
-    void onQuizCompleted();
-    void onRankingRequested();
-    void onLogoutRequested();
-    void onExitRequested();
+//     void onQuizCompleted();
+//     void onRankingRequested();
+//     void onLogoutRequested();
+//     void onExitRequested();
 };
 #endif // MAINWINDOW_H

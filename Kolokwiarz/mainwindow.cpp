@@ -22,7 +22,7 @@ MainWindow::~MainWindow()
 void MainWindow::showLoginWindow()
 {
     if (!loginWindow) {
-        loginWindow = new LoginWindow(this);
+        loginWindow = new LoginWindow(userManager, this);
         connect(loginWindow, &LoginWindow::loginSuccess, this, &MainWindow::onLoginSuccess);
     }
     loginWindow->show();
