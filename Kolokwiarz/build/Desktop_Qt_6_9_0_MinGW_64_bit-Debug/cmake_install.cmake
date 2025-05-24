@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/LENOVO/Desktop/ProjektTestownika/Testownik/Testownik
+# Install script for directory: C:/Users/LENOVO/Documents/Kolokwiarz/Kolokwiarz/Kolokwiarz
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Testownik")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Kolokwiarz")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/Users/LENOVO/Desktop/ProjektTestownika/Testownik/Testownik/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/Testownik.exe")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Testownik.exe" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Testownik.exe")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/Users/LENOVO/Documents/Kolokwiarz/Kolokwiarz/Kolokwiarz/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/Kolokwiarz.exe")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Kolokwiarz.exe" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Kolokwiarz.exe")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "C:/Qt/Tools/mingw1310_64/bin/strip.exe" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Testownik.exe")
+      execute_process(COMMAND "C:/Qt/Tools/mingw1310_64/bin/strip.exe" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Kolokwiarz.exe")
     endif()
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("C:/Users/LENOVO/Desktop/ProjektTestownika/Testownik/Testownik/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.qt/deploy_Testownik_1f30dba7b8.cmake")
+  include("C:/Users/LENOVO/Documents/Kolokwiarz/Kolokwiarz/Kolokwiarz/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.qt/deploy_Kolokwiarz_1abfcbc14d.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -66,6 +66,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "C:/Users/LENOVO/Desktop/ProjektTestownika/Testownik/Testownik/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/Users/LENOVO/Documents/Kolokwiarz/Kolokwiarz/Kolokwiarz/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

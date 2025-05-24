@@ -1,7 +1,8 @@
 #include "usermanager.h"
 #include "admin.h"
+#include <QDir>
 
-UserManager::UserManager() { loadUsersFromFile("users.json"); }
+UserManager::UserManager() { qDebug() << "Current working directory:" << QDir::currentPath(); }
 
 void UserManager::loadUsersFromFile(const QString& filepath){
     this->users.clear(); // Czyści pole w razie gdyby coś tam się znajdowało

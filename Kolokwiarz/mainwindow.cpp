@@ -1,6 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "core\jsonquestionsource.h"
+#include "utils/utils.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
     userManager = new UserManager();
+    userManager->loadUsersFromFile(getUsersFilePath());
     quizManager = new QuizManager();
     rankingWindow = new RankingWindow(this);
     loginWindow = new LoginWindow(userManager, this);
@@ -19,6 +20,12 @@ MainWindow::MainWindow(QWidget *parent)
     quizManager.setQuestionSource(std::move(source));
     quizManager.loadQuestions();
     */
+    stackedWidget = new QStackedWidget(this);
+    stackedWidget->addWidget(ui->centralwidget);
+    stackedWidget->addWidget(loginWindow);
+    stackedWidget->addWidget(quizWindow);
+    stackedWidget->addWidget(rankingWindow);
+    setCentralWidget(stackedWidget);
 }
 
 MainWindow::~MainWindow()
@@ -41,16 +48,24 @@ void MainWindow::resizeEvent(QResizeEvent *event)
 
 void MainWindow::showLoginWindow()
 {
-    loginWindow->show();
-    this->hide();
+    if (loginWindow) {
+        stackedWidget->setCurrentWidget(loginWindow);
+    } else {
+        qWarning() << "loginWindow is nullptr!";
+    }
 }
 
 void MainWindow::onLoginSuccess(User* loggedInUser)
 {
     currentUser = loggedInUser;
 
-    userManager->saveUsersToFile("users.json");
+    userManager->saveUsersToFile(getUsersFilePath());
 
-    this->show();
-    loginWindow->hide();
+    stackedWidget->setCurrentWidget(ui->centralwidget);
 }
+
+void MainWindow::on_loginButton_clicked()
+{
+    showLoginWindow();
+}
+

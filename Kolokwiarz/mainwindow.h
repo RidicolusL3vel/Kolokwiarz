@@ -9,6 +9,7 @@
 #include "gui\quizwindow.h"
 #include "gui\rankingwindow.h"
 #include <QResizeEvent>
+#include <QStackedWidget>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -29,6 +30,8 @@ protected:
 private:
     Ui::MainWindow *ui;
 
+    QStackedWidget *stackedWidget;
+
     UserManager* userManager;
     QuizManager* quizManager;
     User* currentUser = nullptr;
@@ -47,5 +50,6 @@ private slots:
 //     void onRankingRequested();
 //     void onLogoutRequested();
 //     void onExitRequested();
+    void on_loginButton_clicked();
 };
 #endif // MAINWINDOW_H

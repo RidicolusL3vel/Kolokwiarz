@@ -26,6 +26,8 @@ qt_add_executable(Kolokwiarz
     gui/quizwindow.h gui/quizwindow.cpp gui/quizwindow.ui
     gui/rankingwindow.h gui/rankingwindow.cpp gui/rankingwindow.ui
     users.json
+    utils/utils.h
+    utils/utils.cpp
 )
 
 target_link_libraries(Kolokwiarz
