@@ -15,6 +15,7 @@ public:
     User(QString name, QString pass, int points = 0, int games = 0, QDateTime login = QDateTime::currentDateTime());
 
     void addPoints(int pts);
+    void incrementGames();
     QString getStats() const;
     QString getUsername() const;
     QString getPassword() const;

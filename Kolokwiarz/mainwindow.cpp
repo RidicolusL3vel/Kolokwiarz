@@ -8,10 +8,13 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    QFont font = ui->title->font();
-    // font.setPointSize(-1); // usuń ręczny rozmiar z .ui
-    ui->title->setFont(font);
+    userManager = new UserManager();
+    quizManager = new QuizManager();
+    rankingWindow = new RankingWindow(this);
+    loginWindow = new LoginWindow(userManager, this);
+    quizWindow = new QuizWindow(quizManager, currentUser, this);
 
+    connect(loginWindow, &LoginWindow::loginSuccess, this, &MainWindow::onLoginSuccess);
     /*auto source = std::make_unique<JSONQuestionSource>(":/pytania/miernictwo.json");
     quizManager.setQuestionSource(std::move(source));
     quizManager.loadQuestions();
@@ -20,6 +23,8 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
+    delete userManager;
+    delete quizManager;
     delete ui;
 }
 
@@ -36,10 +41,6 @@ void MainWindow::resizeEvent(QResizeEvent *event)
 
 void MainWindow::showLoginWindow()
 {
-    if (!loginWindow) {
-        loginWindow = new LoginWindow(userManager, this);
-        connect(loginWindow, &LoginWindow::loginSuccess, this, &MainWindow::onLoginSuccess);
-    }
     loginWindow->show();
     this->hide();
 }

@@ -7,6 +7,10 @@ void User::addPoints(int pts) {
     totalPoints += pts;
 }
 
+void User::incrementGames() {
+    totalGames++;
+}
+
 QString User::getStats() const {
     return QString("Username: %1\nTotal Points: %2\nTotal Games: %3\nLast Login: %4")
             .arg(username)
