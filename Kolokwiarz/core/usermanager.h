@@ -18,7 +18,8 @@ public:
 
     void loadUsersFromFile(const QString& filepath);
     void saveUsersToFile(const QString& filepath);
-    std::shared_ptr<User> loginOrRegister(const QString& username, const QString& password);
+    std::shared_ptr<User> login(const QString& username, const QString& password);
+    std::shared_ptr<User> registerUser(const QString& username, const QString& password, QString* error = nullptr);
     bool validatePassword(const QString& username, const QString& password) const;
 };
 

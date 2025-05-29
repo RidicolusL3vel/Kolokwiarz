@@ -14,14 +14,14 @@ class QuizWindow : public QWidget
     Q_OBJECT
 
 public:
-    explicit QuizWindow(QuizManager* quizManager, User* loggedInUser, QWidget *parent = nullptr);
+    explicit QuizWindow(QuizManager* quizManager, std::shared_ptr<User> loggedInUser, QWidget *parent = nullptr);
     ~QuizWindow();
 
 private:
     Ui::QuizWindow *ui;
 
     QuizManager* quizManager;
-    User* loggedInUser;
+    std::shared_ptr<User> loggedInUser;
 };
 
 #endif // QUIZWINDOW_H

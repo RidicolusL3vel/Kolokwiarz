@@ -83,7 +83,7 @@ void UserManager::saveUsersToFile(const QString& filepath){
     }
 }
 
-std::shared_ptr<User> UserManager::loginOrRegister(const QString& username, const QString& password){
+std::shared_ptr<User> UserManager::login(const QString& username, const QString& password){
     for (const auto& user : users){
         if(user->getUsername() == username){
             if(user->getPassword() == password){
@@ -95,7 +95,27 @@ std::shared_ptr<User> UserManager::loginOrRegister(const QString& username, cons
             }
         }
     }
+    return nullptr;
+}
 
+std::shared_ptr<User> UserManager::registerUser(const QString& username, const QString& password, QString* error){
+    for (const auto& user : users){ // Sprawdza czy użytkownik o tej nazwie już istnieje
+        if(user->getUsername() == username){
+            if(error) *error = "Użytkownik o tej nazwie już istnieje.";
+            return nullptr;
+        }
+    }
+    // Sprawdza czy nazwa użytkownika i hasło są puste lub zawierają spacje
+    if(username.isEmpty() || password.isEmpty()){
+        if(error) *error = "Nazwa użytkownika i hasło nie mogą być puste.";
+        return nullptr;
+    }
+
+    if(username.contains(' ') || password.contains(' ')){
+        if(error) *error = "Nazwa użytkownika i hasło nie mogą zawierać spacji.";
+        return nullptr;
+    }
+    // Jeśli nie ma żadnych użytkowników, tworzy pierwszego użytkownika jako admina
     if(users.isEmpty()){
         auto admin = std::make_shared<Admin>(username, password);
         admin->setLastLogin(QDateTime::currentDateTime());

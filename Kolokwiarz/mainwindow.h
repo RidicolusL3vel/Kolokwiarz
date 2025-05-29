@@ -8,6 +8,7 @@
 #include "gui\loginwindow.h"
 #include "gui\quizwindow.h"
 #include "gui\rankingwindow.h"
+#include "gui\mainmenu.h"
 #include <QResizeEvent>
 #include <QStackedWidget>
 
@@ -20,6 +21,7 @@ QT_END_NAMESPACE
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
+    friend class LoginWindow; // Allow LoginWindow to access private members
 
 public:
     explicit MainWindow(QWidget *parent = nullptr);
@@ -34,18 +36,20 @@ private:
 
     UserManager* userManager;
     QuizManager* quizManager;
-    User* currentUser = nullptr;
+    std::shared_ptr<User> currentUser = nullptr;
 
     LoginWindow* loginWindow;
     QuizWindow* quizWindow;
+    MainMenu* mainMenu;
     RankingWindow* rankingWindow;
 
     void showLoginWindow();
     void showQuizWindow();
     void showRankingWindow();
+    void logoutUser();
 
 private slots:
-    void onLoginSuccess(User* loggedInUser);
+    void onLoginSuccess(std::shared_ptr<User> loggedInUser);
 //     void onQuizCompleted();
 //     void onRankingRequested();
 //     void onLogoutRequested();

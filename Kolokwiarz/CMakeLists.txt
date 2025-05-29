@@ -28,6 +28,7 @@ qt_add_executable(Kolokwiarz
     users.json
     utils/utils.h
     utils/utils.cpp
+    gui/mainmenu.h gui/mainmenu.cpp gui/mainmenu.ui
 )
 
 target_link_libraries(Kolokwiarz
