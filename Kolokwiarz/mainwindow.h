@@ -45,8 +45,13 @@ private:
 
     void showLoginWindow();
     void showQuizWindow();
+    void showMainMenu();
     void showRankingWindow();
     void logoutUser();
+
+    bool userLoginStatus = false;
+    void setUserLoginStatus(bool status);
+    bool isLoggedIn() const;
 
 private slots:
     void onLoginSuccess(std::shared_ptr<User> loggedInUser);
@@ -55,5 +60,7 @@ private slots:
 //     void onLogoutRequested();
 //     void onExitRequested();
     void on_loginButton_clicked();
+    void handleQuizStart(QString selectedTopic, bool isTrainingMode);
+    void on_playButton_clicked();
 };
 #endif // MAINWINDOW_H

@@ -14,3 +14,7 @@ QuizWindow::~QuizWindow()
 {
     delete ui;
 }
+
+void QuizWindow::setMode(bool isTraining){
+    this->isTrainingMode = true;
+}

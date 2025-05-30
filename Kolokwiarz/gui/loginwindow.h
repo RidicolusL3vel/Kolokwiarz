@@ -31,9 +31,9 @@ signals:
 private slots:
     void attemptLogin();
     void attemptRegister();
-    void backToStartWindow();
-    void LOGIN();
-    void REGISTER();
+    void on_backButton_clicked();
+    void on_registerButton_clicked();
+    void on_loginButton_clicked();
+    void clearFields();
 };
-
 #endif // LOGINWINDOW_H

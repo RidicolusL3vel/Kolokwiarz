@@ -2,6 +2,7 @@
 #define MAINMENU_H
 
 #include <QWidget>
+#include "../utils/utils.h"
 
 namespace Ui {
 class MainMenu;
@@ -20,13 +21,15 @@ protected:
 
 private:
     Ui::MainMenu *ui;
-    struct QuizTopic;
+    QList<QuizTopic> quizTopics;
 
 signals:
-    void startQuiz();
+    void startQuiz(QString selectedTopic, bool isTrainingMode);
+    void backToMainMenuRequested();
 
 private slots:
-    void setChosenOptions();
+    void setTopicsByCategory();
+    void on_backButton_clicked();
 };
 
 #endif // MAINMENU_H

@@ -8,4 +8,8 @@
 
 QString getUsersFilePath();
 
+struct QuizTopic{
+    QString name;
+    QString category;
+};
 #endif // UTILS_H

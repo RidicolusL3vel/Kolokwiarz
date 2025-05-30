@@ -38,6 +38,7 @@ void LoginWindow::attemptLogin(){
         ui->loginErrorLabel->setStyleSheet("color: red;");
         return;
     }
+    clearFields();
     emit loginSuccess(loggedInUser);
 }
 
@@ -46,20 +47,40 @@ void LoginWindow::attemptRegister(){
     QString password = ui->registerPassEdit->text();
     QString errorMsg;
 
-    auto newUser = userManager->registerUser(username, password);
+    auto newUser = userManager->registerUser(username, password, &errorMsg);
 
     if(!newUser){
         ui->registerErrorLabel->setText(errorMsg);
         ui->registerErrorLabel->setStyleSheet("color: red;");
         return;
     }
+    clearFields();
     emit loginSuccess(newUser);
 }
 
 
-void LoginWindow::backToStartWindow()
+void LoginWindow::on_backButton_clicked()
 {
     emit backToMainMenuRequested();
+    clearFields();
+}
+
+
+void LoginWindow::on_registerButton_clicked()
+{
+    attemptRegister();
+    return;
+}
+
+
+void LoginWindow::on_loginButton_clicked()
+{
+    attemptLogin();
+    return;
+}
+
+void LoginWindow::clearFields()
+{
     ui->usernameEdit->clear();
     ui->passwordEdit->clear();
     ui->registerLoginEdit->clear();
@@ -67,18 +88,3 @@ void LoginWindow::backToStartWindow()
     ui->loginErrorLabel->clear();
     ui->registerErrorLabel->clear();
 }
-
-
-void LoginWindow::LOGIN()
-{
-    attemptLogin();
-    return;
-}
-
-
-void LoginWindow::REGISTER()
-{
-    attemptRegister();
-    return;
-}
-
