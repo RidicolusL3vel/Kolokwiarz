@@ -128,11 +128,12 @@ void MainWindow::handleQuizStart(QString selectedTopic, bool isTrainingMode)
 
 void MainWindow::on_playButton_clicked()
 {
-    if(!isLoggedIn()){
+    /*if(!isLoggedIn()){
         QMessageBox::critical(this, "BŁĄD", "Aby zagrać musisz być zalogowany.");
     }else{
         showMainMenu();
-    }
+    }*/
+    showMainMenu();
 }
 
 void MainWindow::showMainMenu(){

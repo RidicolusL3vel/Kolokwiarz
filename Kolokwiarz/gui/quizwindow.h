@@ -25,6 +25,7 @@ private:
     QuizManager* quizManager;
     std::shared_ptr<User> loggedInUser;
     bool isTrainingMode;
+    void startQuiz(const QString& topicName);
 };
 
 #endif // QUIZWINDOW_H

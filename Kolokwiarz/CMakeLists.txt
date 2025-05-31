@@ -17,7 +17,6 @@ qt_add_executable(Kolokwiarz
     core/QuestionSource.h
     core/jsonquestionsource.h core/jsonquestionsource.cpp
     core/quizmanager.h core/quizmanager.cpp
-    base/miernictwoForTesting.json
     core/user.h core/user.cpp
     core/admin.h core/admin.cpp
     core/questioneditor.h core/questioneditor.cpp
@@ -29,6 +28,7 @@ qt_add_executable(Kolokwiarz
     utils/utils.h
     utils/utils.cpp
     gui/mainmenu.h gui/mainmenu.cpp gui/mainmenu.ui
+    base/miernictwo_elektroniczne.json base/filozofia.json base/multimedia.json
 )
 
 target_link_libraries(Kolokwiarz

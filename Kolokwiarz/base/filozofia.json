@@ -1,0 +1,332 @@
+[
+    {
+        "question": "Próba wytłumaczenia ewolucji na Ziemi za pomocą teorii Darwina to wyjaśnianie:",
+        "options": [
+            "strukturalne",
+            "historyczno-genetyczne",
+            "indukcyjno-statystyczne",
+            "dedukcyjno-nomologiczne"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "question": "Które stwierdzenie NIE jest zgodne z platońską teorią idei:",
+        "options": [
+            "Platon nie objaśnia doświadczenia moralnego i estetycznego.",
+            "Teoria rozwiązuje problem tożsamości, gdyż idee istnieją, ponieważ są wieczne i niezmienne.",
+            "Teoria rozwiązuje problem zmiany. Rzeczy zmieniają się, ponieważ idee odbijają się w nich ze zmienną intensyznością.",
+            "Platon rozwiązuje problem związku Bytu z Pozorem, gdyż rzeczy są cieniami idei a wielość idei wyjaśnia zróżnicowanie rzeczy."
+        ],
+        "correctIndex": 2
+    },
+    {
+        "question": "Rewolucja naukowa XVI-XVII wieku NIE polegala na:",
+        "options": [
+            "zamianie metody myślenia „dlaczego” na „jak”",
+            "zamianie celu teoretycznego nauki na utylitarny",
+            "zamianie paradygmatu Ptolemensza na paradygmat Kopernika.",
+            "zamianie przedmiotu poznania naukowego (ilościowy aspekt rzeczywistości)"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "question": "Zastosowany do krytyki teorii naukowych przez Karla Poppera fałsylikacjonizm NIE miał charakteru:",
+        "options": [
+            "statystycznego",
+            "krótkofalowego",
+            "minimalistycznego",
+            "samoograniczającego się"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Według koncepcji Thomasa Kuhna klasyczna teoria Newtona oraz teoria względności Einsteina:",
+        "options": [
+            "są „niewspółmierne”",
+            "opisują tę samą rzeczywistość",
+            "wykorzystują ten sam paradygmat",
+            "potwierdzają swego rodzaju „anomalie” i powodują kryzys „nauki normalne”"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Która z poniższych definicji jest poprawna?",
+        "options": [
+            "\"Logika jest nauką o logicznym myśleniu.\"",
+            "\"Logika jest nauką myślenia zgodnie z zasadami logiki.\"",
+            "\"Trójkąt jest prostą figurą geometryczną składającą się z trzech równych odcinków.\"",
+            "\"Trójkąt jest prostą figurą geometryczną składającą się z trzech połączonych odcinków.\""
+        ],
+        "correctIndex": 3
+    },
+    {
+        "question": "Karl Popper odrzuca kryterium weryfikowalności logicznych pozytywistów, ponieważ teoria naukowa",
+        "options": [
+            "stosuje metodę krytyczną",
+            "uwzględnia metafizykę",
+            "bada problemy a nie fakty i obserwacje",
+            "musi być fałsylikowalna"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "question": "Cechą współczesnej dyktatury NIE JEST:",
+        "options": [
+            "arbitralność decyzji",
+            "istnienie tylko jednej partii politycznej",
+            "nieuwzględnianie praw ani wolności obywatelskich.",
+            "stosowanie przemocy wobec przeciwników politycznych"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "question": "Które stwierdzenie najdokładniej opisuje badanie naukowe?",
+        "options": [
+            "ignoruje informacje z różnych źródeł",
+            "Nie pozwala naukowcom oceniać wiarygodności swoich źródeł",
+            "Nigdy nie powinno wiązać się z etycznymi decyzjami dotyczącymi stosowania wiedzy",
+            "Może prowadzić do wyjaśnień, które łączą dane z tym, co ludzie już wiedzą o swoim otoczeniu"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "question": "Według Thomasa Kuhna niedojrzała naukę nie charakteryzuje",
+        "options": [
+            "brak dominującej szkoły myślenia",
+            "rozbieżność teorii",
+            "konkurencja",
+            "prawidłowy paradygmat"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "question": "Inne Lacatos w swojej metodologii programów badań naukowych",
+        "options": [
+            "nie krytykuje zasady weryfikacji pozytywizmu logicznego",
+            "nie krytykuje fałsylikacjonizmu Karla Poppera",
+            "nie krytykuje idei rewolucji naukowych Thomasa Kuhna",
+            "dostosowuje otwartość na krytycyzm Poppera i przywiązania do teorii Kuhna"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "question": "Co nie jest podstawowym tematem we współczesnej filozofii nauki",
+        "options": [
+            "krytyka naukowa",
+            "naukowe wyjaśnienie",
+            "odkrycia naukowe",
+            "fantazja naukowa"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "question": "Logiczni empirycy Koła Wiederńskiego nie brali pod uwagę",
+        "options": [
+            "metafizyki",
+            "percepcji zmysłowej",
+            "wykorzystania matematyki w filozofii",
+            "analizy logicznej za pomocą logiki symbolicznej"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Metafizyka jest gałęzią",
+        "options": [
+            "fizyki",
+            "metaetyki",
+            "filozofii",
+            "żadnej z powyższych"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "question": "Nauka nie opiera się na",
+        "options": [
+            "eksperymencie",
+            "wierze",
+            "obserwacji",
+            "hipotezach"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "question": "Ogólną teorią bytu zajmuje się",
+        "options": [
+            "ontologia",
+            "fizyka",
+            "epistemologia",
+            "etyka"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Etymologiczne znaczenie terminu \"metafizyka\" to",
+        "options": [
+            "po fizyce",
+            "przed fizyką",
+            "o fizyce",
+            "inne niż fizyka"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Tak jak etyka jest związana z aksjologią, ontologia jest związana z",
+        "options": [
+            "estetyką",
+            "kosmologią",
+            "idealizmem",
+            "metafizyką"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "question": "Obszar filozoficzny zajmujący się problemem bytu to",
+        "options": [
+            "aksjologia",
+            "epistemologia",
+            "materializm",
+            "ontologia"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "question": "Ostateczna rzeczywistość jest przedmiotem",
+        "options": [
+            "metafizyki",
+            "sceptycyzmu",
+            "estetyki",
+            "pragmatyzmu"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Epistemologia zajmuje się wiedzą o",
+        "options": [
+            "pochodzeniu",
+            "prawdzie",
+            "percepcji",
+            "każdej z powyższych"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "question": "Dyscyplina normatywna to",
+        "options": [
+            "etyka",
+            "estetyka",
+            "zarówno etyka, jak i estetyka",
+            "ani etyka, ani estetyka"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "question": "Gałąz filozofii, która zajmuje się wartościami, znana jest jako",
+        "options": [
+            "metafizyka",
+            "ontologia",
+            "aksjologia",
+            "epistemologia"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "question": "Nauka normatywna to",
+        "options": [
+            "logika",
+            "etyka",
+            "estetyka",
+            "wszystkie z powyższych"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "question": "Filozoficzne studium sztuki i piękna to",
+        "options": [
+            "etyka",
+            "estetyka",
+            "logika",
+            "dramat"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "question": "Empirycy uważają za podstawowe źródło wiedzy",
+        "options": [
+            "rozum",
+            "doświadczenie",
+            "intuicja",
+            "analiza"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "question": "Studiowanie filozofii stymuluje",
+        "options": [
+            "dogmatyzm",
+            "krytyczne myśli",
+            "ślepą wiarę",
+            "wszystkie powyższe"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "question": "Racjonalizm i empiryzm reprezentują filozofię epoki",
+        "options": [
+            "jońskiej",
+            "średniowiecza",
+            "współczesnej",
+            "nowożytnej"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "question": "Starożytny grecki atomizm jest rodzajem",
+        "options": [
+            "monizmu",
+            "pluralizmu",
+            "dualizmu",
+            "idealizmu"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "question": "Filozofia „pierwsza” odnosi się do",
+        "options": [
+            "estetyki",
+            "metafizyki",
+            "epistemologii",
+            "etyki"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "question": "Nauki pozytywne są w zasadzie",
+        "options": [
+            "opisowe",
+            "nakazowe",
+            "normatywne",
+            "wszystkie powyższe"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Każda nauka zajmuje się rzeczywistością jako",
+        "options": [
+            "jej częścią",
+            "całością",
+            "wszystkimi jej częściami",
+            "żadna z powyższych"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Kto jest najwcześniejszym przedstawicielem greckiej kosmologii",
+        "options": [
+            "Sokrates",
+            "Platon",
+            "Tales",
+            "Protagoras"
+        ],
+        "correctIndex": 2
+    }
+]

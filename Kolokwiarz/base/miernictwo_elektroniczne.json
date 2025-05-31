@@ -1,0 +1,912 @@
+[
+    {
+        "question": "Wysokość Wielkiej Piramidy jako pierwszy zmierzył",
+        "options": [
+            "Tales",
+            "Archimedes",
+            "Pitagoras",
+            "Eratostenes"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Pomiar to:",
+        "options": [
+            "proces poznawczy polegający na porównaniu wartości wielkości mierzonej z pewną jej wartością przyjętą za jednostkę miary",
+            "intuicyjne określenie wartości",
+            "teoretyczne obliczenia bez weryfikacji",
+            "przybliżone szacowanie"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Wartość rzeczywista to:",
+        "options": [
+            "faktyczna, prawdziwa wartość wielkości mierzonej, jest to konkretna liczba",
+            "wartość wskazywana przez przyrząd pomiarowy",
+            "średnia z wielu pomiarów",
+            "wartość teoretyczna"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Prawo Ohma opisuje zależność:",
+        "options": [
+            "U = I * R",
+            "P = U * I",
+            "R = ρ * l/S",
+            "I = Q/t"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Prądowe prawo Kirchhoffa mówi, że:",
+        "options": [
+            "suma prądów w węźle wynosi zero",
+            "suma napięć w oczku wynosi zero",
+            "moc w obwodzie jest stała",
+            "rezystancja zastępcza jest sumą rezystancji"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Idealne źródło prądu ma rezystancję wewnętrzną równą:",
+        "options": [
+            "nieskończoność i wartość natężenia jego prądu jest niezależna od podłączonego obciążenia",
+            "zero i napięcie jest stałe",
+            "wartość równą obciążeniu",
+            "zmieniającą się w czasie"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Wzorzec miary:",
+        "options": [
+            "jest narzędziem pomiarowym służącym do odtworzenia lub odtwarzającym ze znaną dokładnością miarę wielkości danej wartości",
+            "to przyrząd do pomiaru temperatury",
+            "to urządzenie do generowania sygnałów",
+            "to wzorzec kolorystyczny"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Etalon to:",
+        "options": [
+            "wzorzec służący wyłącznie do przekazywania miary innym wzorcom",
+            "przyrząd do pomiaru ciśnienia",
+            "narzędzie do kalibracji termometrów",
+            "wzorzec przemysłowy"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Polska służba pomiarowa to:",
+        "options": [
+            "GUM - Główny Urząd Miar",
+            "PKN - Polski Komitet Normalizacyjny",
+            "CPA - Centralne Przedsiębiorstwo Aparatury",
+            "CNM - Centrum Normalizacji Miar"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Błąd pomiaru to:",
+        "options": [
+            "różnica pomiędzy wartością zmierzoną a wartością prawdziwą",
+            "średnia arytmetyczna wyników",
+            "odchylenie standardowe",
+            "wartość wskazywana przez przyrząd"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Błąd systematyczny to błąd:",
+        "options": [
+            "który w kolejnych pomiarach tej samej wartości wielkości mierzonej przy stałych warunkach jest stały co do znaku i wartości lub zmienia się wg określonej zależności",
+            "losowy i nieprzewidywalny",
+            "związany z rozrzutem statystycznym",
+            "wynikający z niedokładności obserwatora"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Dwa pomiary z określonymi niepewnościami nazywamy zgodnymi, jeśli:",
+        "options": [
+            "różnica ich wartości zmierzonych jest mniejsza niż suma niepewności",
+            "są wykonane tym samym przyrządem",
+            "ich niepewności są identyczne",
+            "wartości są takie same"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Woltomierz służy do pomiaru:",
+        "options": [
+            "napięcia, ma nieskończoną rezystancję wewnętrzną i podłącza się go równolegle",
+            "natężenia prądu, podłącza się szeregowo",
+            "mocy, podłącza się równolegle",
+            "częstotliwości, podłącza się szeregowo"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Metody pomiaru natężenia prądu stałego to:",
+        "options": [
+            "bezpośrednia - amperomierzem, pośrednia oparta na prawie Ohma I = U / R",
+            "tylko metoda mostkowa",
+            "tylko metoda kompensacyjna",
+            "metoda porównawcza"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Bezpośredni pomiar napięcia stałego:",
+        "options": [
+            "z podłączonego równolegle woltomierza odczytuje się zmierzoną wartość",
+            "wymaga przerwania obwodu",
+            "wymaga użycia oscyloskopu",
+            "jest możliwy tylko metodą kompensacyjną"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Bezpośredni pomiar rezystancji:",
+        "options": [
+            "po podłączeniu do omomierza obiektu, odczytuje się zmierzoną wartość",
+            "wymaga znajomości prawa Ohma",
+            "jest możliwy tylko metodą mostkową",
+            "wymaga użycia dwóch woltomierzy"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Kompensacyjna metoda pomiaru napięcia stałego:",
+        "options": [
+            "regulując wzorcem doprowadza się do zrównania jego wartości z mierzonym napięciem",
+            "polega na porównaniu z napięciem odniesienia",
+            "wymaga użycia oscyloskopu",
+            "jest metodą statystyczną"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Wypadkowa rezystancja elementów połączonych równolegle równa się:",
+        "options": [
+            "odwrotności sumy odwrotności rezystancji poszczególnych elementów",
+            "sumie rezystancji poszczególnych elementów",
+            "wartości największej rezystancji",
+            "średniej geometrycznej rezystancji"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Wzorce wykonywane są z dokładnością:",
+        "options": [
+            "nawet do tysięcznej części promila",
+            "rzędu 1%",
+            "rzędu 5%",
+            "nie lepszą niż 0.1%"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Błąd względny wyrażony jest:",
+        "options": [
+            "w procentach lub bez jednostki",
+            "tylko w jednostkach podstawowych",
+            "jako wartość bezwzględna",
+            "jako wartość ujemna"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Niepewność to:",
+        "options": [
+            "błąd bez znaku",
+            "błąd systematyczny",
+            "błąd przypadkowy",
+            "wartość maksymalna"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Poprawka to:",
+        "options": [
+            "wartość błędu systematycznego ze znakiem przeciwnym",
+            "wartość błędu przypadkowego",
+            "wartość teoretyczna",
+            "wartość średnia"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Błąd systematyczny:",
+        "options": [
+            "jest niebezpieczny, jeśli o nim nic nie wiemy, ale jeśli potrafimy go wyznaczyć, możemy usunąć go z wyniku pomiaru",
+            "jest zawsze stały",
+            "nie da się wyeliminować",
+            "wynika z niedokładności przyrządu"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Wartość zmierzona wielkości mierzonej poprzez serię pomiarów:",
+        "options": [
+            "przybliżona jest wartością średnią wartości pojedynczych pomiarów",
+            "to wartość najmniejsza z serii",
+            "to wartość największa z serii",
+            "to wartość środkowa"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Błąd przypadkowy pojedynczego pomiaru wielkości mierzonej poprzez serię pomiarów:",
+        "options": [
+            "określa się jako różnicę wartości tego pomiaru i wartości średniej wartości wszystkich pojedynczych pomiarów",
+            "jest stały dla wszystkich pomiarów",
+            "nie da się wyznaczyć",
+            "wynika z niedokładności przyrządu"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Niepewność pomiarów pośrednich, w których wartości mierzone wylicza się z zależności y1=x1-x2 oraz y1=x1/x2, wyznacza się z:",
+        "options": [
+            "Δy1 = Δx1 + Δx2, δy1 = δx1 + δx2",
+            "Δy1 = Δx1 - Δx2, δy1 = δx1 - δx2",
+            "Δy1 = max(Δx1, Δx2), δy1 = max(δx1, δx2)",
+            "Δy1 = √(Δx1² + Δx2²), δy1 = √(δx1² + δx2²)"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Omomierz:",
+        "options": [
+            "służy do pomiaru rezystancji, badany element należy wymontować z obwodu",
+            "może mierzyć rezystancję w obwodzie zasilanym",
+            "wymaga znajomości napięcia zasilania",
+            "mierzy impedancję"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Miernik cyfrowy:",
+        "options": [
+            "wskazanie to bezpośredni odczyt, a dokładność wskazań określona jest poprzez błąd podstawowy oraz błąd dyskretyzacji",
+            "wymaga interpretacji wskazań",
+            "jest mniej dokładny niż analogowy",
+            "nie pokazuje jednostek"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Metoda dwóch woltomierzy pośredniego pomiaru rezystancji:",
+        "options": [
+            "przy pomocy dwóch woltomierzy mierzących spadki napięć na rezystancjach mierzonej i wzorcowej",
+            "wymaga użycia amperomierza",
+            "jest metodą mostkową",
+            "wymaga źródła prądu zmiennego"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Pomiary mocy w obwodach stałoprądowych:",
+        "options": [
+            "na podstawie wskazań woltomierza i amperomierza zmierzoną wartość wyznacza się z zależności P = U * I",
+            "wymagają użycia watomierza",
+            "są możliwe tylko metodą kompensacyjną",
+            "wymagają znajomości rezystancji obciążenia"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Analogowe (A/A) przetworniki pomiarowe to:",
+        "options": [
+            "Bocznik, przekładnik, dzielnik napięcia, tłumik, wzmacniacz pomiarowy",
+            "Przetworniki cyfrowe",
+            "Mikrokontrolery",
+            "Czujniki temperatury"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Eratostenes:",
+        "options": [
+            "jako pierwszy zmierzył obwód Ziemi",
+            "odkrył prawo Archimedesa",
+            "wynalazł kompas",
+            "zbudował pierwszy teleskop"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "W procesie pomiarowym etap ustalenia modelu metrologicznego:",
+        "options": [
+            "musi wystąpić przed wykonaniem pomiaru",
+            "jest opcjonalny",
+            "następuje po wykonaniu pomiaru",
+            "dotyczy tylko kalibracji"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Napięcie elektryczne wyrażone w V:",
+        "options": [
+            "nie jest jedną z wielkości układu SI",
+            "jest podstawową jednostką SI",
+            "jest jednostką pochodną",
+            "jest jednostką temperatury"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Podstawowe wielkości elektryczne to:",
+        "options": [
+            "napięcie, natężenie prądu, rezystancja, pojemność, indukcyjność",
+            "moc, energia, częstotliwość",
+            "temperatura, ciśnienie, wilgotność",
+            "masa, długość, czas"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Dowolny stałoprądowy liniowy dwójnik można zastąpić:",
+        "options": [
+            "modelem Thevenina",
+            "modelem Newtona",
+            "modelem Faradaya",
+            "modelem Ohma"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Wymagania stawiane wzorcom to:",
+        "options": [
+            "duża dokładność, niezmienność w czasie, łatwość odtwarzania, łatwość stosowania, porównywalność",
+            "niski koszt produkcji",
+            "małe rozmiary",
+            "możliwość pracy w wysokich temperaturach"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Błąd nadmierny to:",
+        "options": [
+            "błąd przypadkowy o wartości znacznie odbiegającej od wartości większości innych błędów przypadkowych",
+            "błąd systematyczny",
+            "błąd pomiaru",
+            "błąd przyrządu"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Amperomierz służy do:",
+        "options": [
+            "pomiaru natężenia prądu, ma zerową rezystancję wewnętrzną i podłącza się go szeregowo przerywając obwód",
+            "pomiaru napięcia, podłącza się równolegle",
+            "pomiaru mocy, podłącza się równolegle",
+            "pomiaru rezystancji, podłącza się szeregowo"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Wartość poprawna to:",
+        "options": [
+            "wartość obarczona błędem, ale na tyle małym, że możemy go pominąć",
+            "wartość teoretyczna",
+            "wartość średnia",
+            "wartość wskazywana przez przyrząd"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Błąd przypadkowy:",
+        "options": [
+            "to błąd, który w kolejnych pomiarach tej samej wartości wielkości mierzonej przy stałych warunkach zmienia się losowo co do znaku i wartości",
+            "jest stały",
+            "można wyeliminować",
+            "wynika z niedokładności przyrządu"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Ze względu na charakter wyróżniamy błędy:",
+        "options": [
+            "przypadkowe, systematyczne i nadmierne",
+            "instrumentalne i osobowe",
+            "absolutne i względne",
+            "dodatnie i ujemne"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Błędem nadmiernym wartości wielkości mierzonej poprzez serię pomiarów obarczony jest pomiar:",
+        "options": [
+            "którego wartość różni się od wartości średniej serii pomiarów o wartość przekraczającą potrójne odchylenie standardowe pojedynczego pomiaru",
+            "którego wartość jest najmniejsza",
+            "którego wartość jest największa",
+            "pierwszy w serii"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Niepewność pomiaru wielkości mierzonej poprzez serię pomiarów określana jest:",
+        "options": [
+            "na wybranym poziomie ufności przy pomocy odchylenia standardowego średniej",
+            "jako różnica maksymalna",
+            "jako średnia arytmetyczna",
+            "jako wartość minimalna"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Miernik analogowy:",
+        "options": [
+            "wskazanie to wychylenie wskazówki o α, zmierzoną wartość wyznacza się jako X = α * X_zakr / α_max",
+            "pokazuje wartość cyfrowo",
+            "jest bardziej dokładny niż cyfrowy",
+            "nie wymaga kalibracji"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Najdokładniejszy zegar wahadłowy znajduje się w:",
+        "options": [
+            "Gdańsku",
+            "Warszawie",
+            "Paryżu",
+            "Londynie"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Pośrednie przetworniki A/C o przetwarzaniu impulsowo-czasowym przetwarzają:",
+        "options": [
+            "wartość chwilową",
+            "wartość średnią",
+            "wartość skuteczną",
+            "wartość maksymalną"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Przetworniki A/C bezpośrednie przetwarzają:",
+        "options": [
+            "wartość chwilową",
+            "wartość średnią",
+            "wartość skuteczną",
+            "wartość minimalną"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Pośrednie przetworniki A/C z przetwarzaniem napięcie-częstotliwość przetwarzają:",
+        "options": [
+            "wartość średnią",
+            "wartość chwilową",
+            "wartość skuteczną",
+            "wartość maksymalną"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Parametry przetworników A/C i C/A dzieli się na:",
+        "options": [
+            "statyczne i dynamiczne",
+            "analogowe i cyfrowe",
+            "liniowe i nieliniowe",
+            "dokładne i przybliżone"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Najprostsze przetworniki C/C to:",
+        "options": [
+            "bramki logiczne",
+            "przetworniki A/C",
+            "wzmacniacze operacyjne",
+            "komparatory"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Multipleksery i demultipleksery to:",
+        "options": [
+            "komulatory",
+            "przetworniki A/C",
+            "wzmacniacze",
+            "filtr"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Dekodery (transkodery) służą:",
+        "options": [
+            "zamianie kodów binarnych",
+            "wzmacnianiu sygnałów",
+            "filtrowaniu sygnałów",
+            "przetwarzaniu analogowo-cyfrowemu"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Omomierz cyfrowy:",
+        "options": [
+            "budowany jest zwykle z woltomierza cyfrowego oraz źródła prądowego",
+            "wymaga zewnętrznego źródła napięcia",
+            "mierzy tylko duże rezystancje",
+            "jest mniej dokładny niż analogowy"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Cyfrowy pomiar częstotliwości:",
+        "options": [
+            "wartość zmierzoną wyznacza się jako liczbę cykli wzorcowego sygnału przypadającą na znany odcinek czasowy",
+            "wymaga oscyloskopu",
+            "jest możliwy tylko dla niskich częstotliwości",
+            "wymaga przetwornika A/C"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Cyfrowy pomiar fazy:",
+        "options": [
+            "opiera się na pomiarze czasu okresu i czasu przesunięcia fazowego",
+            "wymaga dwóch oscyloskopów",
+            "jest możliwy tylko dla sinusoid",
+            "wymaga znajomości amplitudy"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Oznaczenia AC i DC określają odpowiednio:",
+        "options": [
+            "prądowe lub napięciowe sygnały zmienne (AC) i stałe (DC)",
+            "prąd stały i zmienny",
+            "napięcie stałe i zmienne",
+            "moc czynną i bierną"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Parametry sygnałów okresowych to:",
+        "options": [
+            "częstotliwość, okres, wartość chwilowa, wartość maksymalna i minimalna, wartość międzyszczytowa",
+            "tylko wartość skuteczna",
+            "tylko wartość średnia",
+            "tylko współczynnik kształtu"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Na idealnym rezystorze:",
+        "options": [
+            "prąd jest w fazie z napięciem",
+            "prąd opóźnia się o 90°",
+            "prąd wyprzedza napięcie o 90°",
+            "nie ma związku fazowego"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Na idealnej cewce:",
+        "options": [
+            "prąd opóźnia się w stosunku do napięcia o 90 stopni",
+            "prąd jest w fazie z napięciem",
+            "prąd wyprzedza napięcie o 90°",
+            "nie ma związku fazowego"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Moc w obwodach zmiennoprądowych:",
+        "options": [
+            "rozkłada się na składowe czynną, bierną i pozorną",
+            "jest zawsze stała",
+            "zależy tylko od napięcia",
+            "zależy tylko od prądu"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Reaktancja to:",
+        "options": [
+            "część urojona impedancji",
+            "część rzeczywista impedancji",
+            "moduł impedancji",
+            "odwrotność impedancji"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Część rzeczywista impedancji to:",
+        "options": [
+            "rezystancja",
+            "reaktancja",
+            "admitancja",
+            "konduktancja"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Susceptancja to:",
+        "options": [
+            "część urojona admitancji",
+            "część rzeczywista admitancji",
+            "moduł admitancji",
+            "odwrotność admitancji"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Oznaczenie AC/DC:",
+        "options": [
+            "określa przetwornik sygnału zmiennego na stały",
+            "określa przetwornik sygnału stałego na zmienny",
+            "określa wzmacniacz",
+            "określa filtr"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Mierząc napięcie zmienne należy zwrócić uwagę na:",
+        "options": [
+            "kształt (w tym na istnienie składowej stałej) i częstotliwość mierzonego sygnału oraz na impedancję źródła",
+            "tylko na wartość skuteczną",
+            "tylko na wartość średnią",
+            "tylko na częstotliwość"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Kształt mierzonego bezpośrednio napięcia zmiennego:",
+        "options": [
+            "musi być taki, jaki może być poprawnie zmierzony przez woltomierz",
+            "nie ma znaczenia",
+            "musi być sinusoidalny",
+            "musi być prostokątny"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Oznaczenie True RMS na przyrządach do pomiaru sygnałów zmiennych:",
+        "options": [
+            "określa, że przyrząd radzi sobie z prawie każdym kształtem mierzonego sygnału",
+            "oznacza pomiar wartości średniej",
+            "oznacza pomiar wartości maksymalnej",
+            "oznacza pomiar wartości minimalnej"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Najistotniejsze parametry woltomierzy napięć zmiennych to:",
+        "options": [
+            "dokładność wskazań, zakres wartości mierzonych napięć, zakres częstotliwości mierzonych napięć",
+            "tylko cena",
+            "tylko wygląd",
+            "tylko rozmiar"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Watomierz:",
+        "options": [
+            "ma cztery zaciski pomiarowe i mierzy moc czynną",
+            "ma dwa zaciski",
+            "mierzy moc bierną",
+            "mierzy moc pozorną"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Próbkowanie to:",
+        "options": [
+            "dyskretyzacja osi czasu",
+            "dyskretyzacja osi amplitudy",
+            "filtrowanie sygnału",
+            "wzmacnianie sygnału"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "W etapie kwantowania występują następujące parametry:",
+        "options": [
+            "liczba przedziałów kwantowania, zakres przetwarzania, kwant",
+            "tylko częstotliwość próbkowania",
+            "tylko czas trwania sygnału",
+            "tylko amplituda sygnału"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Przetworniki A/C dzielimy na:",
+        "options": [
+            "bezpośrednie i pośrednie",
+            "tylno liniowe i nieliniowe",
+            "tylno dokładne i niedokładne",
+            "tylno szybkie i wolne"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Przy pomiarach napięć zmiennych woltomierzem należy zwrócić uwagę na:",
+        "options": [
+            "kształt i częstotliwość sygnału oraz impedancję mierzonego obwodu",
+            "tylno na kolor sygnału",
+            "tylno na czas trwania sygnału",
+            "tylno na moc sygnału"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Bezpośrednie przetworniki A/C dzielimy na:",
+        "options": [
+            "z kompensacją równomierną, z kompensacją wagową, z jednoczesnym porównaniem",
+            "tylno liniowe i nieliniowe",
+            "tylno dokładne i niedokładne",
+            "tylno szybkie i wolne"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Całkujące przetworniki A/C przetwarzają:",
+        "options": [
+            "wartość średnią",
+            "wartość chwilową",
+            "wartość skuteczną",
+            "wartość maksymalną"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Woltomierz cyfrowy:",
+        "options": [
+            "jest podstawowym miernikiem cyfrowym, gdyż bazuje na przetworniku A/C",
+            "jest mniej dokładny niż analogowy",
+            "nie wymaga kalibracji",
+            "mierzy tylko napięcia stałe"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Parametry ogólne sygnałów okresowych to:",
+        "options": [
+            "okres, wartość chwilowa, wartość międzyszczytowa, wartość średnia",
+            "tylno wartość skuteczna",
+            "tylno współczynnik kształtu",
+            "tylno częstotliwość"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Impedancja elementów:",
+        "options": [
+            "w ogólności zależy od częstotliwości",
+            "jest zawsze stała",
+            "nie zależy od częstotliwości",
+            "jest zawsze rzeczywista"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Woltomierze i amperomierze sygnałów zmiennych:",
+        "options": [
+            "w ogromnej większości wskazują wartość skuteczną sygnału",
+            "wskazują wartość średnią",
+            "wskazują wartość maksymalną",
+            "wskazują wartość minimalną"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Co to dwójnik, czwórnik?",
+        "options": [
+            "Elementy elektroniczne posiadające odpowiednio dwa i cztery zaciski",
+            "Elementy posiadające jeden i trzy zaciski",
+            "Elementy posiadające trzy i pięć zacisków",
+            "Elementy posiadające cztery i sześć zacisków"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Wzór na moc prądu stałego to:",
+        "options": [
+            "P = U * I",
+            "P = I² * R",
+            "P = U² / R",
+            "P = W / t"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Co to dzielnik napięcia",
+        "options": [
+            "Jest to czwórnik, używany jako element służący do regulacji podzakresów w aparaturze pomiarowej",
+            "Jest to dwójnik zwiększający napięcie",
+            "Jest to filtr dolnoprzepustowy",
+            "Jest to wzmacniacz"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Co to jest wzmacniacz napięcia stałego:",
+        "options": [
+            "Układ elektroniczny, którego zadaniem jest wytworzenie na wyjściu sygnału analogowego, będącego wzmocnionym sygnałem wejściowym",
+            "Przetwornik analogowo-cyfrowy",
+            "Filtr cyfrowy",
+            "Generator sygnałów"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Co to komparator dwustanowy:",
+        "options": [
+            "Analogowy porównuje napięcia przyłożone do wejść, a na wyjściu podaje sygnał zależny od tego, który z sygnałów wejściowych jest większy",
+            "Wzmacniacz operacyjny",
+            "Przetwornik cyfrowo-analogowy",
+            "Generator impulsów"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Co to integrator:",
+        "options": [
+            "Urządzenie do całkowania numerycznego lub graficznego; rodzaj całkującego układu elektronicznego",
+            "Wzmacniacz różniczkujący",
+            "Filtr dolnoprzepustowy",
+            "Generator funkcyjny"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Co to jest układ SI:",
+        "options": [
+            "Jest to znormalizowany układ jednostek miar zatwierdzony w 1960 przez Generalną Konferencję Miar",
+            "Układ scalony",
+            "System informatyczny",
+            "Standard przemysłowy"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Jakie wymagania stawia się wzorcom:",
+        "options": [
+            "niezmienność w czasie, porównywalność, łatwość odtwarzania, łatwość stosowania, duża dokładność",
+            "niski koszt",
+            "małe rozmiary",
+            "łatwość produkcji"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Jaki procent wszystkich możliwych wartości zmiennej losowej o rozkładzie Gaussa zawiera się w przedziałach: ±σ, ±2σ, i ±3σ wokół wartości oczekiwanej:",
+        "options": [
+            "±σ - 68%, ±2σ - 95%, ±3σ - 99.7%",
+            "±σ - 50%, ±2σ - 75%, ±3σ - 90%",
+            "±σ - 75%, ±2σ - 90%, ±3σ - 95%",
+            "±σ - 90%, ±2σ - 95%, ±3σ - 99%"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Co to są funktory logiczne?",
+        "options": [
+            "Są to bramki logiczne: AND, OR, NOT, NAND, XOR, XNOR, NOR",
+            "Są to przetworniki A/C",
+            "Są to wzmacniacze operacyjne",
+            "Są to filtry cyfrowe"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Parametry przetworników A/C:",
+        "options": [
+            "Nieliniowość całkowa, nieliniowość różniczkowa, błąd przesunięcia zera, współczynnik zmian cieplnych napięcia przesunięcia zera, błąd skalowania, szybkość przetwarzania",
+            "Tylko cena",
+            "Tylko rozmiar",
+            "Tylko pobór mocy"
+        ],
+        "correctIndex": 0
+    }
+]

@@ -1,0 +1,982 @@
+[
+    {
+        "question": "Abonenckie cyfrowe łącza szerokopasmowe o takiej samej przepustowości w obu kierunkach realizują techniki:",
+        "options": [
+            "DSL, HDSL, SDSL",
+            "ADSL, VDSL, RSDSL",
+            "FTTH, FTTB, FTTC",
+            "POTS, ISDN, ATM"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Abonenckie cyfrowe łącza szerokopasmowe xDSL o mniejszej przepustowości od abonenta a większej do abonenta realizują techniki:",
+        "options": [
+            "RSDSL, ADSL, VDSL",
+            "SDSL, HDSL, VDSL",
+            "FTTH, FTTB, FTTC",
+            "POTS, ISDN, ATM"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Częstotliwości rezonansowe pomieszczenia:",
+        "options": [
+            "zależą od rozmiarów pomieszczenia",
+            "są stałe dla wszystkich pomieszczeń",
+            "zależą od materiału ścian",
+            "nie istnieją"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Część widma odpowiadającego światłu widzialnemu zamyka się w przedziale:",
+        "options": [
+            "od 400 do 700 nanometrów",
+            "od 300 do 500 nanometrów",
+            "od 500 do 800 nanometrów",
+            "od 200 do 400 nanometrów"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Cztery podstawowe domeny biorące udział przy akwizycji treści przez abonenta to:",
+        "options": [
+            "domena użytkownika, dostępowa, szkieletowa, treści",
+            "domena fizyczna, logiczna, aplikacyjna, transportowa",
+            "domena sieciowa, terminalowa, usługowa, zarządcza",
+            "domena transmisyjna, komutacyjna, sygnalizacyjna, abonencka"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Do funkcji Gatekeepera NIE zalicza się:",
+        "options": [
+            "Zarządzanie pasmem dla wszystkich elementów znajdujących się w sieci",
+            "Autoryzacja dostępu użytkowników",
+            "Taryfikacja połączeń",
+            "Zarządzanie strefą"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Do nagrania atmosfery akustycznej pomieszczenia można zastosować system:",
+        "options": [
+            "MS lub XY",
+            "AB lub ORTF",
+            "PZM lub DIN",
+            "NOS lub OCT"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Do realizacji wideokonferencji w sieci IP niezbędny jest:",
+        "options": [
+            "mostek wideokonferencyjny",
+            "serwer proxy",
+            "router brzegowy",
+            "firewall aplikacyjny"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Do transmisji obrazu przez Internet stosuje się protokół:",
+        "options": [
+            "TCP i UDP",
+            "FTP i HTTP",
+            "SMTP i POP3",
+            "ICMP i ARP"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Działania ETSI w zakresie multimediów obejmują m.in.:",
+        "options": [
+            "identyfikacja i definicje usług, identyfikacja obszarów do normalizacji, koordynacje prac normalizacyjnych",
+            "certyfikacja sprzętu, audyt bezpieczeństwa, testy penetracyjne",
+            "projektowanie sieci, optymalizacja tras, zarządzanie ruchem",
+            "badania rynku, analiza konkurencji, strategie cenowe"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Element sieci multimedialnej, który nie steruje szybkością, to:",
+        "options": [
+            "brama medialna (gateway)",
+            "kontroler ruchu",
+            "scheduler",
+            "shaper"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Fastlink to system Siemens typu:",
+        "options": [
+            "FITL",
+            "FTTH",
+            "HFC",
+            "xDSL"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Funkcje, które obowiązkowo powinny być realizowane przez terminal H.323 to:",
+        "options": [
+            "transmisja głosu",
+            "transmisja wideo",
+            "transmisja danych",
+            "szyfrowanie strumienia"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Gateway pomiędzy sieciami ISDN - IP nie musi posiadać funkcjonalności:",
+        "options": [
+            "zmiany formatów danych przesyłanych we współpracujących ze sobą sieciami",
+            "konwersji protokołów",
+            "tłumaczenia adresów",
+            "kompresji danych"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Główną funkcją ucha środkowego jest:",
+        "options": [
+            "przeniesienie dźwięku z powietrza do cieczy",
+            "analiza częstotliwości dźwięku",
+            "wzmacnianie dźwięków wysokich",
+            "tłumienie dźwięków niskich"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Głównym problemem podczas transmisji sygnału mowy przez Internet są następujące zniekształcenia:",
+        "options": [
+            "opóźnienia i zgubienia pakietów",
+            "przesterowania i szumy",
+            "echo i sprzężenia",
+            "zakłócenia harmoniczne"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Idea kompresji polega na:",
+        "options": [
+            "zastąpieniu oryginalnej postaci sygnału jego odpowiednim ekwiwalentem",
+            "usunięciu zbędnych informacji",
+            "zmniejszeniu rozmiaru pliku bez zmiany zawartości",
+            "szyfrowaniu danych"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Interfejsem decydującym w zasadniczy sposób o właściwościach SRDA jest:",
+        "options": [
+            "interfejs radiowy IF4",
+            "interfejs abonencki",
+            "interfejs sieciowy",
+            "interfejs zarządzający"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "IS95 to amerykański standard:",
+        "options": [
+            "łącza radiowego systemu łączności komórkowej",
+            "sieci światłowodowej",
+            "telewizji kablowej",
+            "sieci dostępowej xDSL"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "ISDN wykorzystuje techniki:",
+        "options": [
+            "komutacji połączeń i symetrycznych kanałów",
+            "komutacji pakietów i asymetrycznych kanałów",
+            "multipleksacji statystycznej",
+            "transmisji rozproszonej"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Isofona jest to krzywa jednakowego poziomu:",
+        "options": [
+            "głośności",
+            "częstotliwości",
+            "ciśnienia akustycznego",
+            "mocy akustycznej"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Jednym ze standardów kodowania obrazów ruchomych jest:",
+        "options": [
+            "MPEG",
+            "JPEG",
+            "GIF",
+            "PNG"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Kanał interaktywny IC w SSRD(A) (LMDS) to kanał:",
+        "options": [
+            "dwukierunkowy składający się z łącza podstawowego i zwrotnego",
+            "jednokierunkowy od stacji bazowej",
+            "rozgłoszeniowy",
+            "sygnalizacyjny"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Kanał rozsiewaczy BC w SSRD(A) (LMDS) to kanał:",
+        "options": [
+            "szerokopasmowy do abonenta (nie może zawierać kanału interaktywnego)",
+            "wąskopasmowy do abonenta",
+            "sygnalizacyjny",
+            "zarządzający"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Kanał rozsiewaczy BC w SSRD(A) (LMDS) to kanał:",
+        "options": [
+            "sygnał wizji fonu i szybkiej transmisji",
+            "sygnał sterujący",
+            "sygnał synchronizujący",
+            "sygnał testowy"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Klasycznym przykładem systemu fazowego jest:",
+        "options": [
+            "system AB z mikrofonami dookolnymi",
+            "system MS z mikrofonem kardioidalnym",
+            "system XY z mikrofonami bidirekcyjnymi",
+            "system ORTF z mikrofonami przestrzennymi"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Kodowanie zgodne ze standardem G.722 (pasmo 7kHz) zakłada częstotliwość próbkowania sygnału analogowego:",
+        "options": [
+            "równą 16 kHz",
+            "równą 8 kHz",
+            "równą 32 kHz",
+            "równą 44.1 kHz"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Konwergencja w odniesieniu do systemów multimedialnych oznacza:",
+        "options": [
+            "że różne systemy realizują te same usługi pod względem technicznym, jeden system realizuje różne usługi",
+            "unifikację standardów",
+            "integrację usług",
+            "centralizację zarządzania"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Konwersja sygnałów elektrycznych na optyczne w sieci dostępowej AON odbywa się w:",
+        "options": [
+            "ONU",
+            "OLT",
+            "ONT",
+            "ODN"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Która z wymienionych cech nie pasuje jako opis właściwości dostępu przewodowego:",
+        "options": [
+            "krótki czas realizacji inwestycji",
+            "wysoka niezawodność",
+            "duża przepustowość",
+            "niski koszt eksploatacji"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Która z wymienionych cech nie pasuje jako opis właściwości SRDA:",
+        "options": [
+            "niewrażliwy na zakłócenia i czynniki atmosferyczne",
+            "szybka implementacja",
+            "elastyczność konfiguracji",
+            "niski koszt infrastruktury"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Której operacji nie realizuje regenerator optoelektroniczny?",
+        "options": [
+            "retransmission",
+            "wzmacnianie sygnału",
+            "kształtowanie impulsów",
+            "korekcja zniekształceń"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Który sposób realizacji sieci optycznej IP ma najmniejszą nadmiarowość?",
+        "options": [
+            "IP/WDM",
+            "IP/ATM/SDH",
+            "IP/PPP/SDH",
+            "IP/Ethernet/SDH"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Liczba bitów słowa kodowego w modulacji PCM zależy od?",
+        "options": [
+            "przyjętej liczby poziomów kwantyzacji",
+            "częstotliwości próbkowania",
+            "szerokości pasma sygnału",
+            "mocy sygnału"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Maksymalna szybkość danych na wyjściu wokodera systemu IS95 WILL wynosi:",
+        "options": [
+            "9600 b/s",
+            "64 kb/s",
+            "128 kb/s",
+            "256 kb/s"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "MCU do zestawienia połączeń wideokonferencyjnych musi posiadać:",
+        "options": [
+            "sterownik MC (Multipoint Controller) i procesor MP (Multipoint Processor)",
+            "moduł kompresji wideo",
+            "moduł szyfrowania",
+            "moduł zarządzania ruchem"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "MCU nie realizuje funkcji:",
+        "options": [
+            "translacji adresów na adresy w obsługiwanej przez niego sieci",
+            "miksowania strumieni audio",
+            "przełączania strumieni wideo",
+            "synchronizacji uczestników"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Model odniesienia systemu SRDA opracowano w:",
+        "options": [
+            "ETSI",
+            "ITU-T",
+            "IEEE",
+            "IETF"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Modulacja DCM:",
+        "options": [
+            "koduje różnice wartości sąsiadujących próbek sygnału",
+            "koduje wartość bezwzględną próbek",
+            "stosuje kwantyzację nierównomierną",
+            "wykorzystuje kodowanie Huffmana"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Multimedia związane są z trzema cechami technicznymi ułatwiającymi ich realizację i w j. ang. Objętymi skrótem ABC, który oznacza:",
+        "options": [
+            "Application, Brodband Access, Coverance",
+            "Audio, Bandwidth, Compression",
+            "Access, Bandwidth, Coding",
+            "Analog, Binary, Compression"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Na podstawie różnicy natężeń sygnałów dochodzących do lewego i prawego ucha można przeprowadzić:",
+        "options": [
+            "modelowanie percepcji lokalizacji",
+            "analizę widmową",
+            "pomiar czułości słuchu",
+            "badanie progu słyszalności"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Najbardziej rozpowszechnione z usług multimedialnych to:",
+        "options": [
+            "prezentacja tekstu, dźwięku i obrazu",
+            "telefonia internetowa",
+            "wideokonferencje",
+            "streaming wideo"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Najczęściej stosowanymi odmianami sieci FTTL w Polsce są sieci doprowadzające światłowód do szafki ulicznej lub budynku określane są skrótem:",
+        "options": [
+            "FTTC i FTTB",
+            "FTTH i FTTN",
+            "FTTA i FTTD",
+            "FTTP i FTTK"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Nazwa ISDN określa sieć:",
+        "options": [
+            "cyfrową z integracją usług",
+            "analogową z integracją usług",
+            "pakietową z integracją usług",
+            "radiową z integracją usług"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Nieprzezroczystość optyczna to cecha:",
+        "options": [
+            "wzmacniacza EDFA",
+            "światłowodu",
+            "łącza optycznego",
+            "transpondera"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Normalizacją w zakresie multimediów w Europie zajmuje się:",
+        "options": [
+            "ETSI",
+            "IEEE",
+            "ITU-T",
+            "ISO"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "O multimediach można mówić w kontekście:",
+        "options": [
+            "prezentacji multimedialnych",
+            "sieci teleinformatycznych",
+            "systemów operacyjnych",
+            "aplikacji biurowych"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Obecność Gatekeepera w sieciach H.323 jest:",
+        "options": [
+            "nieobowiązkowa, ale zalecana",
+            "obowiązkowa",
+            "zabroniona",
+            "wymagana tylko dla dużych sieci"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Odbiór zbiorczy przestrzenny w systemie IS95 w łączu do terminala polega na:",
+        "options": [
+            "odbiorze sygnału przychodzącego z więcej niż jednej stacji bazowej",
+            "odbiorze na wielu antenach",
+            "odbiorze na wielu częstotliwościach",
+            "odbiorze w wielu przedziałach czasowych"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Ograniczenie dla pojedynczego kanału związane z jego przepływnością B, zasięgiem L i dyspersją D jest:",
+        "options": [
+            "B + 2*D*L to 5 (nie wiem nie czytelne)???",
+            "B * L * D < 1",
+            "B / (D * L) > 10",
+            "B^2 + D^2 + L^2 = const"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Podstawową funkcją systemu dostępowego jest:",
+        "options": [
+            "przybliżenie interfejsu abonenckiego do interfejsu punktu udostępnienia usług",
+            "zapewnienie maksymalnej przepustowości",
+            "minimalizacja opóźnień",
+            "integracja usług"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Podstawowe elementy modelu odniesienia SRDA to:",
+        "options": [
+            "sterownik, stacja bazowa NMA i radiowego urządzenia końcowego",
+            "router, switch i terminal",
+            "OLT, ONU i ODN",
+            "MCU, gateway i gatekeeper"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Proces polegający na wzroście progu słyszalności jednego dźwięku na skutek obecności innego dźwięku to:",
+        "options": [
+            "maskowanie",
+            "intermodulacja",
+            "kompresja",
+            "sprzężenie"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Przy przekroczeniu opóźnienia krytycznego, dźwięk odbity dochodzi do słuchacza w postaci:",
+        "options": [
+            "echa",
+            "sprzężenia",
+            "zniekształcenia",
+            "szumu"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Ramka w systemie MGW składa się z:",
+        "options": [
+            "2 x 8 szczelin do realizacji ruchu w obie strony",
+            "4 x 4 szczelin",
+            "16 szczelin jednokierunkowych",
+            "1 szczeliny sterującej i 15 danych"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Rozwój sieci telekomunikacyjnych spowodował, że obecnie dzieli się je funkcjonalnie na obszary:",
+        "options": [
+            "sieci dostępowej i sieci szkieletowej",
+            "sieci rdzeniowej i sieci dystrybucyjnej",
+            "sieci szkieletowej i sieci agregacyjnej",
+            "sieci transmisyjnej i sieci komutacyjnej"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Ruchy gałek ocznych polegające na szeregu prawie niedostrzegalnych skoków występują:",
+        "options": [
+            "od 4 do 5 razy na sek",
+            "od 1 do 2 razy na sek",
+            "od 10 do 12 razy na sek",
+            "co 100 ms"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Sieci zgodne ze standardem H.323 pozwalają na realizację połączeń w trybie:",
+        "options": [
+            "komutacji pakietów",
+            "komutacji kanałów",
+            "komutacji wiadomości",
+            "komutacji impulsów"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Sieć światłowodowa ODN może pracować w trybie:",
+        "options": [
+            "simpleks, diplex i duplex",
+            "TDD i FDD",
+            "synchronicznym i asynchronicznym",
+            "transparentnym i tłumionym"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Standard kodowania sygnału opisany jest w zaleceniu ITU-R G.711 zakłada:",
+        "options": [
+            "próbkowanie 8kHz i przepustowość 64 kb/s",
+            "próbkowanie 16kHz i przepustowość 128 kb/s",
+            "próbkowanie 44.1kHz i przepustowość 1.5 Mb/s",
+            "próbkowanie 48kHz i przepustowość 2 Mb/s"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Standardy przesyłania danych w sieciach wykorzystujące różne media transmisyjne opisane są rodziną zaleceń:",
+        "options": [
+            "T.120",
+            "H.323",
+            "G.711",
+            "X.25"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Stratne metody kompresji sygnału, w porównaniu z metodami bezstratnymi z reguły:",
+        "options": [
+            "pozwalają na większe kompresje",
+            "zachowują lepszą jakość",
+            "są szybsze w realizacji",
+            "wymagają mniejszej mocy obliczeniowej"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Sygnały o charakterze impulsowym najskuteczniej można przesyłać przez publiczne sieci:",
+        "options": [
+            "z komutacją pakietów",
+            "z komutacją kanałów",
+            "z komutacją wiadomości",
+            "z komutacją impulsów"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Sygnały o charakterze ciągłym najskuteczniej można przesyłać przez publiczne sieci:",
+        "options": [
+            "z komutacją połączeń",
+            "z komutacją pakietów",
+            "z komutacją wiadomości",
+            "z komutacją impulsów"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "System Airspan to system SRDA stosujący technikę:",
+        "options": [
+            "CDMA z bezpośrednim rozproszeniem DS",
+            "FDMA z podziałem częstotliwościowym",
+            "TDMA z podziałem czasowym",
+            "OFDM z multipleksacją ortogonalną"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "System MGW (Multi Gain Wireless) to:",
+        "options": [
+            "SRDA",
+            "sieć światłowodowa",
+            "system komórkowy",
+            "sieć dostępowa xDSL"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Transponder do przewodnik:",
+        "options": [
+            "O/E/O",
+            "E/O/E",
+            "O/O/O",
+            "E/E/E"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Twierdzenie Shannona-Kotielnikowa w procesie cyfryzacji sygnału narzuca wymagania na:",
+        "options": [
+            "częstotliwość próbkowania sygnału analogowego",
+            "liczbę bitów kwantyzacji",
+            "moc sygnału",
+            "szerokość pasma"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Urządzenie OLT w sieci dostępowej realizuje następujące podstawowe funkcje:",
+        "options": [
+            "styku z siecią tel. I multipleksacji ruchu z wielu ONU",
+            "konwersji protokołów",
+            "komutacji pakietów",
+            "routingu ruchu"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Usługa wideokonferencyjna wymaga sieci:",
+        "options": [
+            "z bardzo małymi fluktuacjami fazy",
+            "o dużej przepustowości",
+            "o niskim opóźnieniu",
+            "z komutacją kanałów"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Usługi dostępowe w sieci ISDN to np.:",
+        "options": [
+            "prezentacja numeru abonenta wywołującego CLIP",
+            "telefonia internetowa",
+            "wideokonferencje",
+            "transmisja danych"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Usługi multimedialne to:",
+        "options": [
+            "łączna prezentacja różnych źródeł danych",
+            "usługi głosowe",
+            "usługi transmisji danych",
+            "usługi telemetryczne"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "W modelu odniesienia dla SRDA wyróżnia się interfejsy zewnętrzne i wewnętrzne pomiędzy elementami. Interfejsów wew. jest:",
+        "options": [
+            "trzy",
+            "dwa",
+            "cztery",
+            "pięć"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "W skład teleusług sieci ISDN wchodzą m.in.:",
+        "options": [
+            "telefonia 3,1 kHz, telefax i wideotex",
+            "telefonia internetowa",
+            "wideokonferencje",
+            "streaming wideo"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "W systemie Airspan podstawowa szybkość transmisji danych w łączu radiowym wynosi:",
+        "options": [
+            "160 kb/s",
+            "64 kb/s",
+            "2 Mb/s",
+            "10 Mb/s"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "W systemie Airspan jeden kanał radiowy realizujący transmisję w obie strony zajmuje:",
+        "options": [
+            "2 x 2,65 MHz",
+            "2 x 1 MHz",
+            "5 MHz",
+            "10 MHz"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "W systemach Airspan kanał może mieć następującą strukturę:",
+        "options": [
+            "144 kb/s + 16 kb/s lub 2x (64 kb/s + 8 kb/s)",
+            "128 kb/s + 32 kb/s",
+            "256 kb/s + 64 kb/s",
+            "512 kb/s + 128 kb/s"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "W systemie Airspan ze stałym przydziałem zasobów (FA) może pracować w jednym kanale częstotliwościowym:",
+        "options": [
+            "15 łączy",
+            "8 łączy",
+            "32 łączy",
+            "64 łączy"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "W systemie IS95 WILL stosuje się odbiór zbiorczy:",
+        "options": [
+            "czasowy, częstotliwościowy i przestrzenny",
+            "tylko czasowy",
+            "tylko częstotliwościowy",
+            "tylko przestrzenny"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "W systemie MGW częstotliwość nadawania ramek (kanału radiowego) zmieniana jest:",
+        "options": [
+            "500 razy/s",
+            "50 razy/s",
+            "1000 razy/s",
+            "2000 razy/s"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "W systemie MGW dzięki transmisji tej samej informacji w dwóch kolejnych ramkach uzyskuje się:",
+        "options": [
+            "odbiór zbiorczy czasowy i częstotliwościowy",
+            "większą przepustowość",
+            "lepszą jakość sygnału",
+            "mniejsze opóźnienia"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "W systemie MGW szerokość kanału radiowego wynosi:",
+        "options": [
+            "1 MHz (przez emisje zajmowane jest 2,56 MHz)",
+            "2 MHz",
+            "5 MHz",
+            "10 MHz"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "W systemie MGW większą przepływność kanału binarnego uzyskuje się poprzez:",
+        "options": [
+            "odpowiednie łączenie szczelin czasowych",
+            "zwiększenie mocy nadawania",
+            "zastosowanie lepszej modulacji",
+            "zwiększenie szerokości kanału"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "W systemie selektywnym WDM straty mocy sygnałów:",
+        "options": [
+            "nie zależą od liczby kanałów",
+            "rosną liniowo z liczbą kanałów",
+            "maleją z liczbą kanałów",
+            "rosną kwadratowo z liczbą kanałów"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "W systemie SWING stosuje się interfejs radiowy:",
+        "options": [
+            "DECT",
+            "GSM",
+            "UMTS",
+            "WiFi"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "W systemie WILL IS95 zastosowano rozpraszanie sygnału ciągami kodowymi:",
+        "options": [
+            "Walsha w liczbie 64",
+            "Golda w liczbie 128",
+            "Barka w liczbie 32",
+            "Kasamiego w liczbie 16"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "W terminalach wideokonferencyjnych synchronizacje przechodzą przy wykorzystaniu protokołu:",
+        "options": [
+            "H.255 0",
+            "H.245",
+            "H.225",
+            "H.235"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "W uchu ludzkim narządem pełniącym rolę podobną do swoistego rodzaju analizatora częstotliwości lub analizatora Fouriera jest:",
+        "options": [
+            "błona podstawowa",
+            "błona bębenkowa",
+            "ślimak",
+            "kosteczki słuchowe"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Warstwa optyczna sieci WDM nie zawiera podwarstwy:",
+        "options": [
+            "lini",
+            "fizycznej",
+            "transmisyjnej",
+            "kanałowej"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Wielkość krytycznego opóźnienia czasowego:",
+        "options": [
+            "waha się od 20 do 100 ms",
+            "jest stała i wynosi 50 ms",
+            "zależy od częstotliwości sygnału",
+            "jest mniejsza niż 10 ms"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Za współpracę terminali H.323 z innymi terminalami rodziny H.32x odpowiada:",
+        "options": [
+            "Gateway (brama medialna)",
+            "Gatekeeper",
+            "MCU",
+            "Proxy"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Zalecenie T.120 określa:",
+        "options": [
+            "standard transmisji danych",
+            "standard kodowania wideo",
+            "standard kodowania audio",
+            "standard kompresji"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Zasadniczym zadaniem kompresji sygnału jest:",
+        "options": [
+            "minimalizacja szerokości pasma dla jego przesłania",
+            "zwiększenie jakości sygnału",
+            "zabezpieczenie sygnału",
+            "synchronizacja sygnału"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Zasięg użytkowy systemu SWING ograniczony jest:",
+        "options": [
+            "modą nadajników oraz czasem opóźnienia",
+            "mocą nadajników",
+            "czułością odbiorników",
+            "zakłóceniami"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Zastosowanie dupleksu czasowego TPD powoduje problemy związane z czasem propagacji sygnału i opóźnieniami. W systemie MGW problem ten rozwiązano stosując:",
+        "options": [
+            "pomiar i uwzględniając wartość opóźnienia propagacyjnego podczas instalacji terminala",
+            "zwiększenie odstępu czasowego",
+            "zmniejszenie szybkości transmisji",
+            "zastosowanie korekcji błędów"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Zgodnie z teorią falową pomieszczenie może być traktowane jako:",
+        "options": [
+            "układ rezonatorów",
+            "filtr dolnoprzepustowy",
+            "filtr górnoprzepustowy",
+            "filtr pasmowy"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Zgodnie z wymaganiami Ministerstwa Łączności (Infrastruktury) system SRDA musi realizować następujące ustalenia:",
+        "options": [
+            "transmisje danych min 4?kb/b, telefon i faksymile",
+            "transmisję wideo",
+            "wideokonferencje",
+            "streaming audio"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Zgodnie ze specyfikacją ETSI systemy SRDA:",
+        "options": [
+            "nie mogą mieć wewnętrznych komutacji, ale mogą umożliwiać ograniczoną mobilność abonentów",
+            "muszą mieć pełną komutację",
+            "nie mogą obsługiwać mobilności",
+            "muszą obsługiwać tylko stacjonarnych abonentów"
+        ],
+        "correctIndex": 0
+    }
+]

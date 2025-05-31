@@ -24,12 +24,13 @@ private:
     QList<QuizTopic> quizTopics;
 
 signals:
-    void startQuiz(QString selectedTopic, bool isTrainingMode);
+    void startQuiz(QString selectedTopic, bool isTrainingMode, int questionAmount = 10);
     void backToMainMenuRequested();
 
 private slots:
     void setTopicsByCategory();
     void on_backButton_clicked();
+    void on_startGameButton_clicked();
+    void onTopicChanged(const QString &topicName);
 };
-
 #endif // MAINMENU_H

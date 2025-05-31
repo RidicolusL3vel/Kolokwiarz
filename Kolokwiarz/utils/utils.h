@@ -8,6 +8,8 @@
 
 QString getUsersFilePath();
 
+QString getQuestionsFilePath(const QString &topicName);
+
 struct QuizTopic{
     QString name;
     QString category;
