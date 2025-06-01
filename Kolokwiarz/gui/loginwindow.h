@@ -26,7 +26,7 @@ private:
 
 signals:
     void loginSuccess(std::shared_ptr<User> loggedInUser);
-    void backToMainMenuRequested();
+    void backToMainWindowRequested();
 
 private slots:
     void attemptLogin();

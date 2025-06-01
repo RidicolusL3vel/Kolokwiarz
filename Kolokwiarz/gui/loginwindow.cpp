@@ -61,7 +61,7 @@ void LoginWindow::attemptRegister(){
 
 void LoginWindow::on_backButton_clicked()
 {
-    emit backToMainMenuRequested();
+    emit backToMainWindowRequested();
     clearFields();
 }
 

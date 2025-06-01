@@ -9,6 +9,7 @@
 #include "gui\quizwindow.h"
 #include "gui\rankingwindow.h"
 #include "gui\mainmenu.h"
+#include "gui\endwindow.h"
 #include <QResizeEvent>
 #include <QStackedWidget>
 
@@ -42,6 +43,7 @@ private:
     QuizWindow* quizWindow;
     MainMenu* mainMenu;
     RankingWindow* rankingWindow;
+    EndWindow* endWindow;
 
     void showLoginWindow();
     void showQuizWindow();
@@ -60,7 +62,7 @@ private slots:
 //     void onLogoutRequested();
 //     void onExitRequested();
     void on_loginButton_clicked();
-    void handleQuizStart(QString selectedTopic, bool isTrainingMode);
+    void handleQuizStart(QString selectedTopic, bool isTrainingMode, int questionAmount = 10);
     void on_playButton_clicked();
 };
 #endif // MAINWINDOW_H

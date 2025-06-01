@@ -29,6 +29,7 @@ qt_add_executable(Kolokwiarz
     utils/utils.cpp
     gui/mainmenu.h gui/mainmenu.cpp gui/mainmenu.ui
     base/miernictwo_elektroniczne.json base/filozofia.json base/multimedia.json
+    gui/endwindow.h gui/endwindow.cpp gui/endwindow.ui
 )
 
 target_link_libraries(Kolokwiarz

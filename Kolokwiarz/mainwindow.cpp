@@ -16,23 +16,21 @@ MainWindow::MainWindow(QWidget *parent)
     loginWindow = new LoginWindow(userManager, this);
     quizWindow = new QuizWindow(quizManager, currentUser, this);
     mainMenu = new MainMenu(this);
+    endWindow = new EndWindow(quizWindow, currentUser, this);
 
     connect(loginWindow, &LoginWindow::loginSuccess, this, &MainWindow::onLoginSuccess);
 
-    connect(loginWindow, &LoginWindow::backToMainMenuRequested, this, [this](){
+    connect(loginWindow, &LoginWindow::backToMainWindowRequested, this, [this](){
         stackedWidget->setCurrentWidget(ui->centralwidget);
     });
 
-    connect(mainMenu, &MainMenu::backToMainMenuRequested, this, [this](){
+    connect(mainMenu, &MainMenu::backToMainWindowRequested, this, [this](){
         stackedWidget->setCurrentWidget(ui->centralwidget);
     });
+
+    connect(quizWindow, &QuizWindow::backToMainMenuRequested, this, &MainWindow::showMainMenu);
 
     connect(mainMenu, &MainMenu::startQuiz, this, &MainWindow::handleQuizStart);
-
-    /*auto source = std::make_unique<JSONQuestionSource>(":/pytania/miernictwo.json");
-    quizManager.setQuestionSource(std::move(source));
-    quizManager.loadQuestions();
-    */
 
     stackedWidget = new QStackedWidget(this);
     stackedWidget->addWidget(ui->centralwidget);
@@ -120,9 +118,10 @@ void MainWindow::on_loginButton_clicked()
     }
 }
 
-void MainWindow::handleQuizStart(QString selectedTopic, bool isTrainingMode)
+void MainWindow::handleQuizStart(QString selectedTopic, bool isTrainingMode, int questionAmount)
 {
     quizWindow->setMode(isTrainingMode);
+    quizWindow->startQuiz(selectedTopic, questionAmount);
     stackedWidget->setCurrentWidget(quizWindow);
 }
 

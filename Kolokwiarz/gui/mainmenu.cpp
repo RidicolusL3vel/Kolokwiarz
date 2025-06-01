@@ -90,7 +90,7 @@ void MainMenu::onTopicChanged(const QString &topicName){
 
 void MainMenu::on_backButton_clicked()
 {
-    emit backToMainMenuRequested();
+    emit backToMainWindowRequested();
 }
 
 

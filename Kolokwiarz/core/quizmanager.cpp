@@ -8,10 +8,6 @@ void QuizManager::setQuestionSource(std::unique_ptr<QuestionSource> source) {
     questionSource = std::move(source);
 }
 
-void QuizManager::setQuestions(const QVector<TextQuestion>& questions) {
-    this->questions = questions;
-}
-
 QVector<TextQuestion> QuizManager::randomizeQuestions(const QVector<TextQuestion>& questions) {
     QVector<TextQuestion> randomizedQuestions = questions;
     std::random_device rd;
@@ -20,14 +16,15 @@ QVector<TextQuestion> QuizManager::randomizeQuestions(const QVector<TextQuestion
     return randomizedQuestions;
 }
 
-QVector<TextQuestion> QuizManager::randomizeQuestions(const QVector<TextQuestion>& questions, int questionAmount) {
+void QuizManager::randomizeQuestions(int questionAmount) {
     if (questionAmount > questions.size()) {
         qWarning() << "Podana ilosć pytań jest większa niż dostępne pytania.";
-        return {};
+        return ;
     }
     QVector<TextQuestion> randomizedQuestions = randomizeQuestions(questions);
     randomizedQuestions.resize(questionAmount);
-    return randomizedQuestions;
+    this->questions = randomizedQuestions;
+    return;
 }
 
 void QuizManager::loadQuestions() {
@@ -116,4 +113,8 @@ void QuizManager::resetQuiz() {
 
 void QuizManager::setTimeLimit(int seconds) {
     timeLimit = seconds;
+}
+
+int QuizManager::getTimeLimit() const {
+    return timeLimit;
 }

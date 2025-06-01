@@ -2,6 +2,7 @@
 #define QUIZWINDOW_H
 
 #include <QWidget>
+#include <QTimer>
 #include "../core/quizmanager.h"
 #include "../core/user.h"
 
@@ -19,13 +20,27 @@ public:
 
     void setMode(bool isTraining);
 
+    void startQuiz(const QString& topicName, int questionAmount = 10);
+    void showCurrentQuestion();
+
+signals:
+    void backToMainMenuRequested();
+    void quizCompleted();
+
+private slots:
+    void on_quitButton_clicked();
+    void handleAnswerTimeout();
+
+    void on_confirmButton_clicked();
+
 private:
     Ui::QuizWindow *ui;
+
+    QTimer* displayTimer;
 
     QuizManager* quizManager;
     std::shared_ptr<User> loggedInUser;
     bool isTrainingMode;
-    void startQuiz(const QString& topicName);
 };
 
 #endif // QUIZWINDOW_H

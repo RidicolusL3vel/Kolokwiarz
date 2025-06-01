@@ -21,10 +21,9 @@ public:
 
     /*~~Inicjalizacja~~*/
     void setQuestionSource(std::unique_ptr<QuestionSource> source); // ustawienie źródła pytań
-    void setQuestions(const QVector<TextQuestion>& questions); // ustawienie pytań ze źródła
     QVector<TextQuestion> randomizeQuestions(const QVector<TextQuestion>& questions);
     /* ^^przetasowuje wszystkie pytania; zwraca pełny wektor^^ */
-    QVector<TextQuestion> randomizeQuestions(const QVector<TextQuestion>& questions, int questionAmount);
+    void randomizeQuestions(int questionAmount);
     /* ^^przetasowuje pytania, a następnie zwraca wektor przycięty do ilości pytań wskazanych przez questionAmount^^ */
 
     /*~~Obsługa Quizu~~*/
@@ -46,6 +45,7 @@ public:
     void calculateScore(); // oblicz wynik na podstawie czasu i odpowiedzi
     void resetQuiz(); // zresetuj quiz
     void setTimeLimit(int seconds); // ustaw limit czasu na odpowiedź
+    int getTimeLimit() const; // pobierz limit czasu na odpowiedź
 };
 
 #endif // QUIZMANAGER_H

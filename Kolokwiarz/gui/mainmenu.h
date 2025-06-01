@@ -25,7 +25,7 @@ private:
 
 signals:
     void startQuiz(QString selectedTopic, bool isTrainingMode, int questionAmount = 10);
-    void backToMainMenuRequested();
+    void backToMainWindowRequested();
 
 private slots:
     void setTopicsByCategory();
