@@ -138,3 +138,7 @@ bool UserManager::validatePassword(const QString& username, const QString& passw
     }
     return false;
 }
+
+QVector<std::shared_ptr<User>> UserManager::getUsers() const {
+    return users;
+}

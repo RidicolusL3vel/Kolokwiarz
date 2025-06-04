@@ -84,6 +84,12 @@
                <verstretch>0</verstretch>
               </sizepolicy>
              </property>
+             <property name="font">
+              <font>
+               <family>Arial</family>
+               <pointsize>16</pointsize>
+              </font>
+             </property>
              <property name="text">
               <string>IKONKA</string>
              </property>
@@ -99,6 +105,12 @@
                <horstretch>2</horstretch>
                <verstretch>0</verstretch>
               </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Arial</family>
+               <pointsize>14</pointsize>
+              </font>
              </property>
              <property name="text">
               <string>BRAK ZALOGOWANEGO UŻYTKOWNIKA</string>

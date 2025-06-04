@@ -11,20 +11,9 @@ QuizWindow::QuizWindow(QuizManager* quizManager, std::shared_ptr<User> loggedInU
 {
     ui->setupUi(this);
 
-    displayTimer = new QTimer(this);
-    connect(displayTimer, &QTimer::timeout, this, [this, &quizManager]() {
-        double elapsed = quizManager->getTimeInSeconds();
-        int remaining = quizManager->getTimeLimit() - static_cast<int>(elapsed);
-
-        if (remaining <= 0) {
-            ui->timer->display("0");
-            displayTimer->stop();
-            handleAnswerTimeout();
-            return;
-        }
-
-        ui->timer->display(QString::number(remaining));
-    });
+    countdownTimer = new QTimer(this);
+    countdownTimer->setInterval(1000); // 1 sekunda
+    connect(countdownTimer, &QTimer::timeout, this, &QuizWindow::updateTimerDisplay);
 }
 
 QuizWindow::~QuizWindow()
@@ -37,28 +26,13 @@ void QuizWindow::setMode(bool isTraining){
 }
 
 void QuizWindow::handleAnswerTimeout() {
-    const auto& question = quizManager->getCurrentQuestion();
-    int correct = question.getCorrectIndex();
-
-    QList<QLabel*> labels = { ui->answer_1, ui->answer_2, ui->answer_3, ui->answer_4 };
-    labels[correct]->setStyleSheet("color: green;");
-
-    QTimer::singleShot(3000, this, [this]() {
-        if (quizManager->hasNextQuestion()) {
-            quizManager->nextQuestion();
-            if (!isTrainingMode) {
-                quizManager->startTimer();
-                displayTimer->start(100);
-            }
-            showCurrentQuestion();
-        } else {
-            emit quizCompleted();
-        }
-    });
+    on_confirmButton_clicked(); // automatycznie potwierdź odpowiedź
 }
 
 
 void QuizWindow::showCurrentQuestion(){
+    ui->confirmButton->setEnabled(true);
+    hasAnswered = false;
     const auto& question = quizManager->getCurrentQuestion();
     ui->questionLabel->setText(question.getQuestionText());
     const auto& options = question.getOptions();
@@ -73,6 +47,23 @@ void QuizWindow::showCurrentQuestion(){
         radios[i]->setChecked(false);
         radios[i]->setAutoExclusive(true);
     }
+    quizManager->markQuestionStart();
+    if(!isTrainingMode)
+        countdownTimer->start();
+    updateTimerDisplay();
+}
+
+void QuizWindow::updateTimerDisplay() {
+    double elapsed = quizManager->getTimeSinceQuestionStart();
+    int remaining = quizManager->getTimeLimit() - static_cast<int>(elapsed);
+    if (remaining < 0) remaining = 0;
+
+    ui->timer->display(remaining);
+
+    if (remaining <= 0) {
+        countdownTimer->stop();
+        handleAnswerTimeout(); // automatycznie obsłuż pytanie
+    }
 }
 
 void QuizWindow::startQuiz(const QString& topicName, int questionAmount)
@@ -82,9 +73,11 @@ void QuizWindow::startQuiz(const QString& topicName, int questionAmount)
         return;
     }
 
+    quizManager->setTopicName(""); // resetuje poprzedni temat
+    quizManager->setTopicName(topicName);
+
     if(!isTrainingMode){
-        quizManager->startTimer();
-        displayTimer->start(100); // aktualizacja co 100ms
+        countdownTimer->start();
     }
 
     auto source = std::make_unique<JSONQuestionSource>(getQuestionsFilePath(topicName));
@@ -104,8 +97,7 @@ void QuizWindow::on_quitButton_clicked()
     emit backToMainMenuRequested();
 }
 
-
-void QuizWindow::on_confirmButton_clicked()
+void QuizWindow::checkAnswerAndColorize()
 {
     int selected = -1;
     if (ui->Aradio->isChecked()) selected = 0;
@@ -113,6 +105,7 @@ void QuizWindow::on_confirmButton_clicked()
     else if (ui->Cradio->isChecked()) selected = 2;
     else if (ui->Dradio->isChecked()) selected = 3;
 
+    quizManager->submitAnswer(selected);
     const auto& question = quizManager->getCurrentQuestion();
     int correct = question.getCorrectIndex();
 
@@ -120,19 +113,29 @@ void QuizWindow::on_confirmButton_clicked()
     if (selected != -1 && selected != correct)
         labels[selected]->setStyleSheet("color: red;");
     labels[correct]->setStyleSheet("color: green;");
+}
 
-    displayTimer->stop();
+
+void QuizWindow::on_confirmButton_clicked()
+{
+    countdownTimer->stop();
+    ui->confirmButton->setEnabled(false);
+
+    if (hasAnswered) {
+        qWarning() << "Odpowiedź już została udzielona.";
+        return;
+    }
+    hasAnswered = true;
+    checkAnswerAndColorize();
 
     QTimer::singleShot(3000, this, [this]() {
         if (quizManager->hasNextQuestion()) {
             quizManager->nextQuestion();
-            if (!isTrainingMode) {
-                quizManager->startTimer();
-                displayTimer->start(100);
-            }
             showCurrentQuestion();
         } else {
-            emit quizCompleted();
+            emit quizCompleted(quizManager->getTopicName(),
+                               quizManager->getCurrentScore(),
+                               quizManager->getCorrectAnswerCount());
         }
     });
 }

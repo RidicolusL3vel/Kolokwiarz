@@ -231,25 +231,6 @@
            </property>
           </widget>
          </item>
-         <item row="5" column="3">
-          <widget class="QPushButton" name="startGameButton">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>Bauhaus 93</family>
-             <pointsize>18</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>GRAJ</string>
-           </property>
-          </widget>
-         </item>
          <item row="4" column="2">
           <widget class="QRadioButton" name="rankingRadio">
            <property name="sizePolicy">
@@ -354,7 +335,26 @@
             <string> pytań</string>
            </property>
            <property name="minimum">
-            <number>10</number>
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="3">
+          <widget class="QPushButton" name="startGameButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Bauhaus 93</family>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>GRAJ</string>
            </property>
           </widget>
          </item>

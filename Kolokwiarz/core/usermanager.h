@@ -16,6 +16,7 @@ private:
 public:
     UserManager();
 
+    QVector<std::shared_ptr<User>> getUsers() const;
     void loadUsersFromFile(const QString& filepath);
     void saveUsersToFile(const QString& filepath);
     std::shared_ptr<User> login(const QString& username, const QString& password);

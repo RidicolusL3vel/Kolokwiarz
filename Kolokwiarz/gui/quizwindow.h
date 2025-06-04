@@ -25,7 +25,7 @@ public:
 
 signals:
     void backToMainMenuRequested();
-    void quizCompleted();
+    void quizCompleted(const QString& topicName, int score, int correctAnswers);
 
 private slots:
     void on_quitButton_clicked();
@@ -36,11 +36,16 @@ private slots:
 private:
     Ui::QuizWindow *ui;
 
-    QTimer* displayTimer;
+    bool hasAnswered = false;
+
+    QTimer* countdownTimer;
+    void updateTimerDisplay();
 
     QuizManager* quizManager;
-    std::shared_ptr<User> loggedInUser;
+    std::shared_ptr<User> loggedInUser = nullptr;
     bool isTrainingMode;
+
+    void checkAnswerAndColorize();
 };
 
 #endif // QUIZWINDOW_H

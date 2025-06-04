@@ -12,11 +12,10 @@ MainWindow::MainWindow(QWidget *parent)
     userManager = new UserManager();
     userManager->loadUsersFromFile(getUsersFilePath());
     quizManager = new QuizManager();
-    rankingWindow = new RankingWindow(this);
+    rankingWindow = new RankingWindow(userManager, this);
     loginWindow = new LoginWindow(userManager, this);
     quizWindow = new QuizWindow(quizManager, currentUser, this);
     mainMenu = new MainMenu(this);
-    endWindow = new EndWindow(quizWindow, currentUser, this);
 
     connect(loginWindow, &LoginWindow::loginSuccess, this, &MainWindow::onLoginSuccess);
 
@@ -31,6 +30,8 @@ MainWindow::MainWindow(QWidget *parent)
     connect(quizWindow, &QuizWindow::backToMainMenuRequested, this, &MainWindow::showMainMenu);
 
     connect(mainMenu, &MainMenu::startQuiz, this, &MainWindow::handleQuizStart);
+
+    connect(quizWindow, &QuizWindow::quizCompleted, this, &MainWindow::onQuizCompleted);
 
     stackedWidget = new QStackedWidget(this);
     stackedWidget->addWidget(ui->centralwidget);
@@ -95,6 +96,11 @@ void MainWindow::logoutUser()
 
 void MainWindow::onLoginSuccess(std::shared_ptr<User> loggedInUser)
 {
+    if (!loggedInUser) {
+        qWarning() << "Logged in user is null!";
+        return;
+    }
+
     currentUser = loggedInUser;
 
     userManager->saveUsersToFile(getUsersFilePath());
@@ -127,12 +133,11 @@ void MainWindow::handleQuizStart(QString selectedTopic, bool isTrainingMode, int
 
 void MainWindow::on_playButton_clicked()
 {
-    /*if(!isLoggedIn()){
+    if(!isLoggedIn()){
         QMessageBox::critical(this, "BŁĄD", "Aby zagrać musisz być zalogowany.");
     }else{
         showMainMenu();
-    }*/
-    showMainMenu();
+    }
 }
 
 void MainWindow::showMainMenu(){
@@ -141,4 +146,38 @@ void MainWindow::showMainMenu(){
     }else{
         qWarning() << "mainMenu is nullptr!";
     }
+}
+
+void MainWindow::onQuizCompleted(const QString& topicName
+                                 , int score
+                                 , int correctAnswers)
+{
+    if (!currentUser) {
+        qWarning() << "Current user is null!";
+        return;
+    }
+    if(endWindow){
+        delete endWindow; // usuwamy poprzednie okno
+    }
+
+    endWindow = new EndWindow(currentUser, this);
+    stackedWidget->addWidget(endWindow);
+    connect(endWindow, &EndWindow::quizFinished, this, &MainWindow::handleQuizFinished);
+    endWindow->setResults(topicName, score, correctAnswers);
+    stackedWidget->setCurrentWidget(endWindow);
+}
+
+void MainWindow::handleQuizFinished(int score)
+{
+    if (!currentUser) {
+        qWarning() << "Current user is null!";
+        return;
+    }
+
+    currentUser->addPoints(score);
+    currentUser->incrementGames();
+    userManager->saveUsersToFile(getUsersFilePath());
+
+    stackedWidget->setCurrentWidget(mainMenu);
+    ui->username->setText(currentUser->getUsername());
 }

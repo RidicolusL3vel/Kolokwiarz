@@ -12,9 +12,12 @@ class QuizManager
 private:
     int currentScore = 0;
     int currentQuestionIndex = 0;
+    int correctAnswers = 0;
     QVector<TextQuestion> questions;
     std::unique_ptr<QuestionSource> questionSource;
     QElapsedTimer timer;
+    QString quizTopic;
+    qint64 startTime;
     int timeLimit = 30; // czas na odpowiedź w sekundach
 public:
     QuizManager();
@@ -31,18 +34,24 @@ public:
     void startQuiz();
     void startTimer(); // rozpocznij odliczanie czasu
     double getTimeInSeconds() const; // pobierz czas w sekundach
+    void markQuestionStart();
+    double getTimeSinceQuestionStart() const;
+    void setTopicName(const QString& topicName);
+    QString getTopicName() const;
 
     /*~~Obsługa Pytań~~*/
     TextQuestion getCurrentQuestion() const; // pobierz aktualne pytanie
     void nextQuestion(); // przejdź do następnego pytania
     bool checkAnswer(int answerIndex); // sprawdź odpowiedź użytkownika
     bool hasNextQuestion() const; // sprawdź czy są jeszcze pytania
+    void submitAnswer(int answerIndex); // zatwierdź odpowiedź użytkownika
 
     /*~~Statystyki~~*/
     int getCurrentScore() const; // pobierz aktualny wynik
     int getCurrentQuestionIndex() const; // pobierz aktualny indeks pytania
     int getTotalQuestions() const; // pobierz całkowitą liczbę pytań
-    void calculateScore(); // oblicz wynik na podstawie czasu i odpowiedzi
+    int getCorrectAnswerCount() const;
+    void calculateScore(int selectedIndex); // oblicz wynik na podstawie czasu i odpowiedzi
     void resetQuiz(); // zresetuj quiz
     void setTimeLimit(int seconds); // ustaw limit czasu na odpowiedź
     int getTimeLimit() const; // pobierz limit czasu na odpowiedź

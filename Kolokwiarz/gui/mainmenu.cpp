@@ -3,6 +3,7 @@
 #include "../utils/utils.h"
 #include "../core/jsonquestionsource.h"
 #include <QMessageBox>
+#include <cmath>
 
 MainMenu::MainMenu(QWidget *parent)
     : QWidget(parent)
@@ -41,21 +42,22 @@ MainMenu::~MainMenu()
 void MainMenu::resizeEvent(QResizeEvent *event)
 {
     QWidget::resizeEvent(event);
+    int diag = std::sqrt(this->width() * this->width() + this->height() * this->height());
 
-    int fontSizeBig = std::max(42, this->width()/20);
-    int fontSizeSmall = std::max(14, this->width()/40);
-    QFont fontBig = ui->instruction->font();
-    QFont fontSmall_1 = ui->Filtr->font();
-    QFont fontSmall_2 = ui->Temat->font();
-    QFont fontSmall_3 = ui->ilePytan->font();
-    fontBig.setPointSize(fontSizeBig);
-    ui->instruction->setFont(fontBig);
+    int fontSizeBig = std::max(42, diag/20);
+    int fontSizeSmall = std::max(14, diag/40);
+    // Duży label
+    QFont bigFont = ui->instruction->font();
+    bigFont.setPointSize(fontSizeBig);
+    ui->instruction->setFont(bigFont);
 
-    fontSmall_1.setPointSize(fontSizeSmall);
-    fontSmall_2.setPointSize(fontSizeSmall);
-    fontSmall_3.setPointSize(fontSizeSmall);
-    ui->Filtr->setFont(fontSmall_1);
-    ui->Temat->setFont(fontSmall_2);
+    // Lista pozostałych labeli
+    QList<QLabel*> smallLabels = { ui->Filtr, ui->Temat, ui->ilePytan };
+    for (QLabel* label : smallLabels) {
+        QFont font = label->font();
+        font.setPointSize(fontSizeSmall);
+        label->setFont(font);
+    }
 }
 
 void MainMenu::setTopicsByCategory(){
@@ -83,9 +85,9 @@ void MainMenu::onTopicChanged(const QString &topicName){
     int availableCount = questions.size();
 
     ui->questionCountSpinBox->setMaximum(availableCount);
-    ui->questionCountSpinBox->setValue(qMin(10, availableCount)); // domyślnie 10
+    ui->questionCountSpinBox->setValue(qMin(1, availableCount)); // domyślnie 10
 
-    ui->ilePytan->setText(QString("Ile pytań (z %1)").arg(availableCount));
+    ui->ilePytan->setText(QString("Ile pytan (z %1)").arg(availableCount));
 }
 
 void MainMenu::on_backButton_clicked()

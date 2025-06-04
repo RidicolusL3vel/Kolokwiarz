@@ -48,14 +48,6 @@ void User::resetStats() {
     totalGames = 0;
 }
 
-bool User::operator==(const User &other) const {
-    return username == other.username;
-}
-
-bool User::operator!=(const User &other) const {
-    return !(*this == other);
-}
-
 bool User::operator<(const User &other) const {
     return totalPoints < other.totalPoints;
 }

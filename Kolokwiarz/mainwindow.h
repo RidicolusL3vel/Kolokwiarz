@@ -43,7 +43,7 @@ private:
     QuizWindow* quizWindow;
     MainMenu* mainMenu;
     RankingWindow* rankingWindow;
-    EndWindow* endWindow;
+    EndWindow* endWindow = nullptr;
 
     void showLoginWindow();
     void showQuizWindow();
@@ -57,12 +57,10 @@ private:
 
 private slots:
     void onLoginSuccess(std::shared_ptr<User> loggedInUser);
-//     void onQuizCompleted();
-//     void onRankingRequested();
-//     void onLogoutRequested();
-//     void onExitRequested();
+    void onQuizCompleted(const QString& topicName, int score, int correctAnswers);
     void on_loginButton_clicked();
     void handleQuizStart(QString selectedTopic, bool isTrainingMode, int questionAmount = 10);
     void on_playButton_clicked();
+    void handleQuizFinished(int score);
 };
 #endif // MAINWINDOW_H

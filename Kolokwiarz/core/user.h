@@ -25,8 +25,6 @@ public:
     void setLastLogin(QDateTime dateTime);
     void resetStats();
 
-    bool operator==(const User &other) const;
-    bool operator!=(const User &other) const;
     bool operator<(const User &other) const;
 
     virtual bool isAdmin() const { return false; }

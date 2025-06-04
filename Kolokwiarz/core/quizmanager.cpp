@@ -8,6 +8,18 @@ void QuizManager::setQuestionSource(std::unique_ptr<QuestionSource> source) {
     questionSource = std::move(source);
 }
 
+int QuizManager::getCorrectAnswerCount() const{
+    return correctAnswers;
+}
+
+void QuizManager::setTopicName(const QString& topicName) {
+    this->quizTopic = topicName;
+}
+
+QString QuizManager::getTopicName() const {
+    return quizTopic;
+}
+
 QVector<TextQuestion> QuizManager::randomizeQuestions(const QVector<TextQuestion>& questions) {
     QVector<TextQuestion> randomizedQuestions = questions;
     std::random_device rd;
@@ -23,6 +35,9 @@ void QuizManager::randomizeQuestions(int questionAmount) {
     }
     QVector<TextQuestion> randomizedQuestions = randomizeQuestions(questions);
     randomizedQuestions.resize(questionAmount);
+    for(auto& question : randomizedQuestions){
+        question.shuffleOptions();
+    }
     this->questions = randomizedQuestions;
     return;
 }
@@ -86,22 +101,33 @@ int QuizManager::getTotalQuestions() const {
     return questions.size();
 }
 
-void QuizManager::calculateScore() {
-    if(getTimeInSeconds() > timeLimit) {
+void QuizManager::calculateScore(int selectedIndex) {
+    double elapsed = getTimeSinceQuestionStart();
+    if (elapsed > timeLimit) {
         qWarning() << "Czas minął! Aktualny wynik: " << currentScore;
         return;
-    } else if(!checkAnswer(currentQuestionIndex)) {
+    }
+
+    const auto& question = questions[currentQuestionIndex];
+    if (selectedIndex != question.getCorrectIndex()) {
         qDebug() << "Odpowiedź błędna! Aktualny wynik: " << currentScore;
         return;
-    } else if(getTimeInSeconds() / timeLimit == 1){
+    }
+
+    double ratio = elapsed / timeLimit;
+
+    if (ratio <= 0.1) {
         currentScore += 200;
-        qDebug() << "Niemożliwe do osiągnięcia!\nAle odpowiedź poprawna, aktualny wynik: " << currentScore;
-    } else if(getTimeInSeconds() / timeLimit >= 0.9){
+        qDebug() << "Ekspresowa odpowiedź! +" << 200 << ", wynik: " << currentScore;
+    } else if (ratio <= 0.5) {
+        currentScore += 150;
+        qDebug() << "Szybka odpowiedź! +" << 150 << ", wynik: " << currentScore;
+    } else if (ratio <= 0.9) {
         currentScore += 100;
-        qDebug() << "Odpowiedź poprawna! Aktualny wynik: " << currentScore;
-    } else if(getTimeInSeconds() / timeLimit > 0){
-        double answerTimePenalty = getTimeInSeconds() / timeLimit;
-        currentScore += static_cast<int>(answerTimePenalty * 100);
+        qDebug() << "Poprawna odpowiedź! +" << 100 << ", wynik: " << currentScore;
+    } else {
+        currentScore += 50;
+        qDebug() << "Odpowiedź na styk, ale poprawna. +" << 50 << ", wynik: " << currentScore;
     }
 }
 
@@ -117,4 +143,28 @@ void QuizManager::setTimeLimit(int seconds) {
 
 int QuizManager::getTimeLimit() const {
     return timeLimit;
+}
+
+void QuizManager::markQuestionStart() {
+    startTime = timer.elapsed();
+}
+
+double QuizManager::getTimeSinceQuestionStart() const {
+    return (timer.elapsed() - startTime) / 1000.0; // zwraca czas w sekundach od rozpoczęcia pytania
+}
+
+void QuizManager::submitAnswer(int selectedIndex) {
+    qDebug() << "Wywołano submitAnswer z selectedIndex =" << selectedIndex;
+    if (currentQuestionIndex >= questions.size()) return;
+
+    const auto& question = questions[currentQuestionIndex];
+    qDebug() << "Poprawny indeks odpowiedzi to:" << question.getCorrectIndex();
+
+    if (selectedIndex == question.getCorrectIndex()) {
+        ++correctAnswers;
+        qDebug() << "Poprawna odpowiedź! Liczba poprawnych:" << correctAnswers;
+        calculateScore(selectedIndex);
+    } else {
+        qDebug() << "Błędna odpowiedź.";
+    }
 }
