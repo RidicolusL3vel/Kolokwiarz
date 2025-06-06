@@ -15,11 +15,34 @@ LoginWindow::~LoginWindow()
 
 void LoginWindow::resizeEvent(QResizeEvent *event)
 {
+    // QWidget::resizeEvent(event);
+    // int fontSize = std::max(48, this->width()/12);
+    // QFont font = ui->label->font();
+    // font.setPointSize(fontSize);
+    // ui->label->setFont(font);
     QWidget::resizeEvent(event);
-    int fontSize = std::max(48, this->width()/12);
-    QFont font = ui->label->font();
-    font.setPointSize(fontSize);
-    ui->label->setFont(font);
+    int diag = std::sqrt(this->width() * this->width() + this->height() * this->height());
+    int fontSizeBig = std::max(42, diag / 20);
+    int fontSizeSmall = std::max(14, diag / 55);
+
+    QFont bigFont = ui->label->font();
+    bigFont.setPointSize(fontSizeBig);
+    ui->label->setFont(bigFont);
+
+    QFont buttonFont = ui->loginButton->font();
+    buttonFont.setPointSize(fontSizeSmall);
+    ui->loginButton->setFont(buttonFont);
+    ui->registerButton->setFont(buttonFont);
+
+    // Lista pozostałych labeli
+    QList<QLabel*> smallLabels = { ui->loginPassLabel, ui->loginLabel,
+                                   ui->registerLoginLabel, ui->registerPassLabel,
+                                   ui->loginErrorLabel, ui->registerErrorLabel };
+    for (QLabel* label : smallLabels) {
+        QFont font = label->font();
+        font.setPointSize(fontSizeSmall);
+        label->setFont(font);
+    }
 }
 
 

@@ -18,6 +18,9 @@ public:
 
     void setResults(const QString& topicName, int score, int correctAnswers);
 
+protected:
+    void resizeEvent(QResizeEvent* event) override;
+
 private slots:
     void on_endButton_clicked();
 

@@ -163,7 +163,6 @@ void QuizManager::submitAnswer(int selectedIndex) {
     if (selectedIndex == question.getCorrectIndex()) {
         ++correctAnswers;
         qDebug() << "Poprawna odpowiedź! Liczba poprawnych:" << correctAnswers;
-        calculateScore(selectedIndex);
     } else {
         qDebug() << "Błędna odpowiedź.";
     }

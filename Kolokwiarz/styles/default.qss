@@ -1,0 +1,75 @@
+/* === MOTYW DEFAULT === */
+
+/* Tło aplikacji */
+QWidget {
+    background-color: #B0C4DE;
+}
+
+/* Menu */
+QMenuBar {
+    background-color: #d0d8e2;
+    border: 1px solid #4a4a4a;
+}
+
+/* Przyciski */
+QPushButton {
+    background-color: #e0e6ee;
+    border: 1px solid #4a4a4a;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+QPushButton:hover {
+    background-color: #d0d8e2;
+    border: 1px solid #2c2c2c;
+}
+
+QPushButton:pressed {
+    background-color: #bcc6d4;
+    border: 1px solid #000000;
+}
+
+/* Etykiety */
+QLabel {
+    background: transparent;
+}
+
+/* Tabele */
+QTableWidget {
+    background-color: #f0f4f8;
+    border: 1px solid #888;
+    gridline-color: #555;
+}
+
+/* Nagłówki tabel */
+QHeaderView::section {
+    background-color: #d0d8e2;
+    padding: 4px;
+    border: 1px solid #4a4a4a;
+}
+
+/* Pola tekstowe */
+QLineEdit, QTextEdit {
+    background-color: #ffffff;
+    border: 1px solid #4a4a4a;
+    padding: 5px;
+}
+
+/* Combo Boxy */
+QComboBox {
+    background-color: #ffffff;
+    border: 1px solid #4a4a4a;
+}
+
+QComboBox:hover {
+    border: 1px solid #2c2c2c;
+}
+
+/* Spin Boxy */
+QSpinBox {
+    background-color: #ffffff;
+    border: 1px solid #4a4a4a;
+}
+QSpinBox:hover {
+    border: 1px solid #2c2c2c;
+}

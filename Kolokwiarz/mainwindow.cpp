@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "utils/utils.h"
+#include "gui/questionadder.h"
 #include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent)
@@ -8,6 +9,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    on_actionDefault_triggered();
 
     userManager = new UserManager();
     userManager->loadUsersFromFile(getUsersFilePath());
@@ -24,6 +27,10 @@ MainWindow::MainWindow(QWidget *parent)
     });
 
     connect(mainMenu, &MainMenu::backToMainWindowRequested, this, [this](){
+        stackedWidget->setCurrentWidget(ui->centralwidget);
+    });
+
+    connect(rankingWindow, &RankingWindow::backToMainWindow, this, [this](){
         stackedWidget->setCurrentWidget(ui->centralwidget);
     });
 
@@ -68,12 +75,23 @@ void MainWindow::setUserLoginStatus(bool status){
 
 void MainWindow::resizeEvent(QResizeEvent *event)
 {
-    QMainWindow::resizeEvent(event);
+    QWidget::resizeEvent(event);
+    int diag = std::sqrt(this->width() * this->width() + this->height() * this->height());
 
-    int fontSize = std::max(72, this->width()/12);
-    QFont font = ui->title->font();
-    font.setPointSize(fontSize);
-    ui->title->setFont(font);
+    int fontSizeBig = std::max(72, diag/15);
+    int fontSizeSmall = std::max(14, diag/50);
+    // Duży label
+    QFont bigFont = ui->title->font();
+    bigFont.setPointSize(fontSizeBig);
+    ui->title->setFont(bigFont);
+
+    // Lista pozostałych labeli
+    QList<QLabel*> smallLabels = { ui->username, ui->userIcon };
+    for (QLabel* label : smallLabels) {
+        QFont font = label->font();
+        font.setPointSize(fontSizeSmall);
+        label->setFont(font);
+    }
 }
 
 
@@ -148,6 +166,16 @@ void MainWindow::showMainMenu(){
     }
 }
 
+void MainWindow::on_rankingWindow_clicked()
+{
+    if(rankingWindow){
+        rankingWindow->updateRanking();
+        stackedWidget->setCurrentWidget(rankingWindow);
+    }else{
+        qWarning() << "rankingWindow is nullptr!";
+    }
+}
+
 void MainWindow::onQuizCompleted(const QString& topicName
                                  , int score
                                  , int correctAnswers)
@@ -181,3 +209,44 @@ void MainWindow::handleQuizFinished(int score)
     stackedWidget->setCurrentWidget(mainMenu);
     ui->username->setText(currentUser->getUsername());
 }
+
+
+void MainWindow::on_actionDefault_triggered()
+{
+    QString motyw = ui->actionDefault->text();
+    QFile styleFile(getStyleFilePath(motyw));
+    if (styleFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        QString styleSheet = QString::fromUtf8(styleFile.readAll());
+        qApp->setStyleSheet(styleSheet);
+        qDebug() << "Motyw default wczytany.";
+    } else {
+        qWarning() << "Nie udało się wczytać motywu.";
+    }
+}
+
+
+void MainWindow::on_actionDodaj_Pytanie_triggered()
+{
+    if (!currentUser || !currentUser->isAdmin()) {
+        QMessageBox::warning(this, "Brak dostępu", "Tylko administrator może dodawać pytania.");
+        return;
+    }
+    Admin *admin = dynamic_cast<Admin*>(currentUser.get());
+    if (!admin) {
+        QMessageBox::critical(this, "Błąd", "Nie udało się uzyskać dostępu administratora.");
+        return;
+    }
+    if(stackedWidget->currentWidget() != ui->centralwidget && stackedWidget->currentWidget() != rankingWindow){
+        QMessageBox::critical(this, "BŁĄD", "Tej funkcji można użyć tylko na ekranie startowym lub rankingowym");
+        return;
+    }else if((stackedWidget->currentWidget() == ui->centralwidget || stackedWidget->currentWidget() == rankingWindow) && !isLoggedIn()){
+        QMessageBox::critical(this, "BŁĄD", "Aby dodać pytanie musisz być zalogowany jako administrator.");
+        return;
+    }
+
+    QuestionAdder *questionAdder = new QuestionAdder(*admin, this);
+    questionAdder->setWindowModality(Qt::ApplicationModal);
+    questionAdder->exec();
+    questionAdder->deleteLater();
+}
+

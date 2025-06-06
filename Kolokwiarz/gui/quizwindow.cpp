@@ -106,6 +106,8 @@ void QuizWindow::checkAnswerAndColorize()
     else if (ui->Dradio->isChecked()) selected = 3;
 
     quizManager->submitAnswer(selected);
+    if(!isTrainingMode)
+        quizManager->calculateScore(selected);
     const auto& question = quizManager->getCurrentQuestion();
     int correct = question.getCorrectIndex();
 

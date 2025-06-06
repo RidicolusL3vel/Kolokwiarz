@@ -91,7 +91,7 @@
               </font>
              </property>
              <property name="text">
-              <string>IKONKA</string>
+              <string>👨🏽‍🏫</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -290,8 +290,32 @@
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuMotywy">
+    <property name="title">
+     <string>Motywy</string>
+    </property>
+    <addaction name="actionDefault"/>
+   </widget>
+   <widget class="QMenu" name="menuAdmin">
+    <property name="title">
+     <string>Admin</string>
+    </property>
+    <addaction name="actionDodaj_Pytanie"/>
+   </widget>
+   <addaction name="menuMotywy"/>
+   <addaction name="menuAdmin"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionDefault">
+   <property name="text">
+    <string>Default</string>
+   </property>
+  </action>
+  <action name="actionDodaj_Pytanie">
+   <property name="text">
+    <string>Dodaj Pytanie</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

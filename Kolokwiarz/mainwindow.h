@@ -62,5 +62,8 @@ private slots:
     void handleQuizStart(QString selectedTopic, bool isTrainingMode, int questionAmount = 10);
     void on_playButton_clicked();
     void handleQuizFinished(int score);
+    void on_rankingWindow_clicked();
+    void on_actionDefault_triggered();
+    void on_actionDodaj_Pytanie_triggered();
 };
 #endif // MAINWINDOW_H

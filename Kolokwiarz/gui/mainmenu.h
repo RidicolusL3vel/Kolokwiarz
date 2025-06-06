@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include "../utils/utils.h"
+#include <QButtonGroup>
 
 namespace Ui {
 class MainMenu;
@@ -22,6 +23,7 @@ protected:
 private:
     Ui::MainMenu *ui;
     QList<QuizTopic> quizTopics;
+    QButtonGroup *modeButtonGroup = nullptr;
 
 signals:
     void startQuiz(QString selectedTopic, bool isTrainingMode, int questionAmount = 10);

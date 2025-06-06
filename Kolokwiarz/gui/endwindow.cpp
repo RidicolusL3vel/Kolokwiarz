@@ -19,6 +19,23 @@ EndWindow::~EndWindow()
     delete ui;
 }
 
+void EndWindow::resizeEvent(QResizeEvent *event)
+{
+    QWidget::resizeEvent(event);
+    int diag = std::sqrt(this->width() * this->width() + this->height() * this->height());
+    int fontSizeBig = std::max(42, diag / 20);
+    int fontSizeSmall = std::max(14, diag / 55);
+
+    QFont bigFont = ui->infoLabel->font();
+    bigFont.setPointSize(fontSizeBig);
+    ui->quizFinishedLabel->setFont(bigFont);
+
+    QFont buttonFont = ui->endButton->font();
+    buttonFont.setPointSize(fontSizeSmall);
+    ui->endButton->setFont(buttonFont);
+    ui->infoLabel->setFont(buttonFont);
+}
+
 void EndWindow::setResults(const QString& topicName, int score, int correctAnswers)
 {
     if (!loggedInUser) {

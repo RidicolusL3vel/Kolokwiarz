@@ -17,6 +17,17 @@ public:
     ~RankingWindow();
 
     void updateRanking();
+
+    void setPodiumLabels();
+
+protected:
+    void resizeEvent(QResizeEvent *event) override;
+
+signals:
+    void backToMainWindow();
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::RankingWindow *ui;
 

@@ -37,3 +37,20 @@ QString getQuestionsFilePath(const QString &topicName){
 
     return questionsFilePath;
 }
+
+QString getStyleFilePath(const QString &styleName) {
+    QString appDir = QCoreApplication::applicationDirPath();
+    QDir dir(appDir);
+    dir.cdUp(); // Przechodzi do katalogu nadrzędnego, aby znaleźć styles
+    dir.cdUp(); // Dodatkowe przejście w górę, jeśli exe jest w podkatalogu
+
+    QString styleFilePath = dir.filePath("styles/" + styleName + ".qss");
+
+    if (!QFile::exists(styleFilePath)) {
+        qWarning() << "Plik stylu" << styleName << "nie istnieje!";
+        return QString();
+    }
+
+    qDebug() << "Ścieżka do pliku stylu:" << styleFilePath;
+    return styleFilePath;
+}

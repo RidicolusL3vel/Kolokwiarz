@@ -11,6 +11,12 @@ MainMenu::MainMenu(QWidget *parent)
 {
     ui->setupUi(this);
 
+    modeButtonGroup = new QButtonGroup(this);
+    modeButtonGroup->addButton(ui->trainingRadio);
+    modeButtonGroup->addButton(ui->rankingRadio);
+    ui->trainingRadio->setChecked(true); // Domyślnie tryb treningowy
+    modeButtonGroup->setExclusive(true);
+
     quizTopics = {
         {"Miernictwo Elektroniczne", "Elektronika - Semestr 1"},
         {"Filozofia", "Elektronika - Semestr 1"},
@@ -85,7 +91,7 @@ void MainMenu::onTopicChanged(const QString &topicName){
     int availableCount = questions.size();
 
     ui->questionCountSpinBox->setMaximum(availableCount);
-    ui->questionCountSpinBox->setValue(qMin(1, availableCount)); // domyślnie 10
+    ui->questionCountSpinBox->setValue(qMin(10, availableCount)); // domyślnie 10
 
     ui->ilePytan->setText(QString("Ile pytan (z %1)").arg(availableCount));
 }
@@ -106,7 +112,6 @@ void MainMenu::on_startGameButton_clicked()
         QMessageBox::warning(this, "Błąd", "Proszę wybrać temat quizu.");
         return;
     }
-
     emit startQuiz(selectedTopic, isTrainingMode, questionCount);
 }
 
