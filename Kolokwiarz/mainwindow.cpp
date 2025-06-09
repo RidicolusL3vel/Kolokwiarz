@@ -10,7 +10,13 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    on_actionDefault_triggered();
+    stylesGroup = new QActionGroup(this);
+    stylesGroup->setExclusive(true);
+    stylesGroup->addAction(ui->actionDefaultTheme);
+    stylesGroup->addAction(ui->actionDarkTheme);
+    stylesGroup->setEnabled(true);
+    ui->actionDefaultTheme->setChecked(true);
+    on_actionDefaultTheme_triggered();
 
     userManager = new UserManager();
     userManager->loadUsersFromFile(getUsersFilePath());
@@ -205,20 +211,21 @@ void MainWindow::handleQuizFinished(int score)
     currentUser->addPoints(score);
     currentUser->incrementGames();
     userManager->saveUsersToFile(getUsersFilePath());
+    quizManager->resetQuiz();
 
     stackedWidget->setCurrentWidget(mainMenu);
     ui->username->setText(currentUser->getUsername());
 }
 
 
-void MainWindow::on_actionDefault_triggered()
+void MainWindow::on_actionDefaultTheme_triggered()
 {
-    QString motyw = ui->actionDefault->text();
+    QString motyw = ui->actionDefaultTheme->text();
     QFile styleFile(getStyleFilePath(motyw));
     if (styleFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
         QString styleSheet = QString::fromUtf8(styleFile.readAll());
         qApp->setStyleSheet(styleSheet);
-        qDebug() << "Motyw default wczytany.";
+        qDebug() << "Motyw domyślny wczytany.";
     } else {
         qWarning() << "Nie udało się wczytać motywu.";
     }
@@ -248,5 +255,19 @@ void MainWindow::on_actionDodaj_Pytanie_triggered()
     questionAdder->setWindowModality(Qt::ApplicationModal);
     questionAdder->exec();
     questionAdder->deleteLater();
+}
+
+
+void MainWindow::on_actionDarkTheme_triggered()
+{
+    QString motyw = ui->actionDarkTheme->text();
+    QFile styleFile(getStyleFilePath(motyw));
+    if (styleFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        QString styleSheet = QString::fromUtf8(styleFile.readAll());
+        qApp->setStyleSheet(styleSheet);
+        qDebug() << "Motyw ciemny wczytany.";
+    } else {
+        qWarning() << "Nie udało się wczytać motywu.";
+    }
 }
 

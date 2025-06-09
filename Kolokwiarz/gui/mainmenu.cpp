@@ -4,6 +4,7 @@
 #include "../core/jsonquestionsource.h"
 #include <QMessageBox>
 #include <cmath>
+#include <stdlib.h>
 
 MainMenu::MainMenu(QWidget *parent)
     : QWidget(parent)
@@ -79,6 +80,10 @@ void MainMenu::setTopicsByCategory(){
 
 void MainMenu::onTopicChanged(const QString &topicName){
     QString path = getQuestionsFilePath(topicName);
+
+    if (topicName.trimmed().isEmpty()) {
+        return; // Ignoruj pusty temat
+    }
 
     if(path.isEmpty()){
         QMessageBox::warning(this, "Błąd", "Nie znaleziono pliku pytań dla wybranego tematu.");

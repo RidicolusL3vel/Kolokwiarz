@@ -32,6 +32,8 @@ qt_add_executable(Kolokwiarz
     gui/endwindow.h gui/endwindow.cpp gui/endwindow.ui
     styles/default.qss
     gui/questionadder.h gui/questionadder.cpp gui/questionadder.ui
+    styles/dark.qss
+
 )
 
 target_link_libraries(Kolokwiarz

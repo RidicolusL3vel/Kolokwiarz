@@ -71,9 +71,7 @@
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true">background-color: #C0C0C0;
-border: 1px solid black;
-color: black;</string>
+            <string notr="true"/>
            </property>
            <property name="text">
             <string>↩</string>
@@ -97,8 +95,7 @@ color: black;</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">color: black;
-border: 2px solid black;</string>
+          <string notr="true"/>
          </property>
          <property name="text">
           <string>Top 10 Użytkowników</string>
@@ -180,7 +177,7 @@ border: 2px solid black;</string>
                        </font>
                       </property>
                       <property name="styleSheet">
-                       <string notr="true">color: black;</string>
+                       <string notr="true"/>
                       </property>
                       <property name="text">
                        <string>secondPlace</string>
@@ -297,7 +294,7 @@ background: transparent;</string>
                        </font>
                       </property>
                       <property name="styleSheet">
-                       <string notr="true">color: black;</string>
+                       <string notr="true"/>
                       </property>
                       <property name="text">
                        <string>firstPlace</string>
@@ -405,7 +402,7 @@ background: transparent;</string>
                        </font>
                       </property>
                       <property name="styleSheet">
-                       <string notr="true">color: black;</string>
+                       <string notr="true"/>
                       </property>
                       <property name="text">
                        <string>thirdPlace</string>

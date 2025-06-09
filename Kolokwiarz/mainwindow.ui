@@ -294,7 +294,14 @@
     <property name="title">
      <string>Motywy</string>
     </property>
-    <addaction name="actionDefault"/>
+    <widget class="QMenu" name="menuMotywy_2">
+     <property name="title">
+      <string>Zmień Motyw</string>
+     </property>
+     <addaction name="actionDefaultTheme"/>
+     <addaction name="actionDarkTheme"/>
+    </widget>
+    <addaction name="menuMotywy_2"/>
    </widget>
    <widget class="QMenu" name="menuAdmin">
     <property name="title">
@@ -306,14 +313,19 @@
    <addaction name="menuAdmin"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionDefault">
+  <action name="actionDodaj_Pytanie">
+   <property name="text">
+    <string>Dodaj Pytanie</string>
+   </property>
+  </action>
+  <action name="actionDefaultTheme">
    <property name="text">
     <string>Default</string>
    </property>
   </action>
-  <action name="actionDodaj_Pytanie">
+  <action name="actionDarkTheme">
    <property name="text">
-    <string>Dodaj Pytanie</string>
+    <string>Dark</string>
    </property>
   </action>
  </widget>

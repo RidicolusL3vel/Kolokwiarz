@@ -134,6 +134,7 @@ void QuizManager::calculateScore(int selectedIndex) {
 void QuizManager::resetQuiz() {
     currentScore = 0;
     currentQuestionIndex = 0;
+    correctAnswers = 0;
     timer.invalidate();
 }
 

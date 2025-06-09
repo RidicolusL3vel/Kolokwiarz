@@ -12,6 +12,7 @@
 #include "gui\endwindow.h"
 #include <QResizeEvent>
 #include <QStackedWidget>
+#include <QActionGroup>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -32,6 +33,8 @@ protected:
     void resizeEvent(QResizeEvent *event) override;
 private:
     Ui::MainWindow *ui;
+
+    QActionGroup *stylesGroup;
 
     QStackedWidget *stackedWidget;
 
@@ -63,7 +66,8 @@ private slots:
     void on_playButton_clicked();
     void handleQuizFinished(int score);
     void on_rankingWindow_clicked();
-    void on_actionDefault_triggered();
+    void on_actionDefaultTheme_triggered();
     void on_actionDodaj_Pytanie_triggered();
+    void on_actionDarkTheme_triggered();
 };
 #endif // MAINWINDOW_H

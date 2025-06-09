@@ -1,73 +1,87 @@
-/* === MOTYW DEFAULT === */
+/* === MOTYW CIEMNY === */
 
 /* Tło aplikacji */
 QWidget {
-    background-color: #B0C4DE;
+    background-color: #2b2b2b;
+    color: #ffffff;
 }
 
 /* Menu */
 QMenuBar {
-    background-color: #d0d8e2;
+    background-color: #2f2f2f;
+    color: #ffffff;
     border: 1px solid #4a4a4a;
 }
 QMenu::item {
     background-color: transparent;
     padding: 5px 25px;
-    color: #000000;
+    color: #ffffff;
 }
+
 QMenu::item:selected {
-    background-color: #c0c8d4;
-    color: #000000;
+    background-color: #555555;
+    color: #ffffff;
+}
+
+QStatusBar {
+    background-color: #3c3c3c;
+    color: #ffffff;
 }
 
 /* Przyciski */
 QPushButton {
-    background-color: #e0e6ee;
+    background-color: #444444;
     border: 1px solid #4a4a4a;
     border-radius: 4px;
     padding: 5px 10px;
+    color: #ffffff;
 }
 
 QPushButton:hover {
-    background-color: #d0d8e2;
+    background-color: #555555;
     border: 1px solid #2c2c2c;
 }
 
 QPushButton:pressed {
-    background-color: #bcc6d4;
+    background-color: #666666;
     border: 1px solid #000000;
 }
 
 /* Etykiety */
 QLabel {
     background: transparent;
+    color: #ffffff;
 }
 
 /* Tabele */
 QTableWidget {
-    background-color: #f0f4f8;
+    background-color: #3a3a3a;
     border: 1px solid #888;
     gridline-color: #555;
+    color: #ffffff;
 }
 
 /* Nagłówki tabel */
 QHeaderView::section {
-    background-color: #d0d8e2;
+    background-color: #4a4a4a;
     padding: 4px;
     border: 1px solid #4a4a4a;
+    color: #ffffff;
 }
 
 /* Pola tekstowe */
 QLineEdit, QTextEdit {
-    background-color: #ffffff;
+    background-color: #2f2f2f;
     border: 1px solid #4a4a4a;
     padding: 5px;
+    color: #ffffff;
 }
 
 /* Combo Boxy */
 QComboBox {
-    background-color: #ffffff;
+    background-color: #2f2f2f;
     border: 1px solid #4a4a4a;
+    color: #ffffff;
 }
 
 QComboBox:hover {
@@ -76,9 +90,11 @@ QComboBox:hover {
 
 /* Spin Boxy */
 QSpinBox {
-    background-color: #ffffff;
+    background-color: #2f2f2f;
     border: 1px solid #4a4a4a;
+    color: #ffffff;
 }
+
 QSpinBox:hover {
     border: 1px solid #2c2c2c;
 }
