@@ -10,6 +10,14 @@ build/
 *.so.*
 *.dll
 *.dylib
+*.obj
+*.user
+*.pro.user
+*.autosave
+
+# Doxygen
+html/
+latex/
 
 # Qt-es
 object_script.*.Release

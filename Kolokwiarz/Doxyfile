@@ -1,0 +1,24 @@
+# Nazwa projektu
+PROJECT_NAME = QuizApp
+OUTPUT_DIRECTORY = doxygen_output
+
+# Pliki źródłowe
+INPUT = ./core ./gui
+FILE_PATTERNS = *.h *.cpp
+RECURSIVE = YES
+
+# Co wyciągać z kodu
+EXTRACT_ALL = YES
+EXTRACT_PRIVATE = YES
+EXTRACT_STATIC = YES
+
+# Diagramy
+HAVE_DOT = YES
+CLASS_DIAGRAMS = YES
+CALL_GRAPH = YES
+CALLER_GRAPH = YES
+DOT_IMAGE_FORMAT = svg
+
+# Wyjście
+GENERATE_HTML = YES
+GENERATE_LATEX = NO
