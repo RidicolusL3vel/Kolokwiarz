@@ -8,8 +8,6 @@ build/
 *.lai
 *.so
 *.so.*
-*.dll
-*.dylib
 *.obj
 *.user
 *.pro.user
