@@ -3,7 +3,7 @@ PROJECT_NAME = QuizApp
 OUTPUT_DIRECTORY = doxygen_output
 
 # Pliki źródłowe
-INPUT = ./core ./gui
+INPUT = ./core ./gui ./mainwindow.h ./mainwindow.cpp
 FILE_PATTERNS = *.h *.cpp
 RECURSIVE = YES
 
