@@ -49,7 +49,6 @@ private:
     EndWindow* endWindow = nullptr;
 
     void showLoginWindow();
-    void showQuizWindow();
     void showMainMenu();
     void showRankingWindow();
     void logoutUser();
