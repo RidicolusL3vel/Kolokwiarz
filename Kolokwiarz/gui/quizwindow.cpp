@@ -114,6 +114,15 @@ void QuizWindow::checkAnswerAndColorize()
     QList<QLabel*> labels = { ui->answer_1, ui->answer_2, ui->answer_3, ui->answer_4 };
     if (selected != -1 && selected != correct)
         labels[selected]->setStyleSheet("color: red;");
+    else if(selected == -1){
+        qWarning() << "Nie wybrano żadnej odpowiedzi!";
+        for (int i = 0; i < labels.size(); ++i) {
+            labels[i]->setStyleSheet("color: red;");
+            if(labels[i] == labels[correct]){
+                labels[i]->setStyleSheet("color: green;");
+            }
+        }
+    }
     labels[correct]->setStyleSheet("color: green;");
 }
 

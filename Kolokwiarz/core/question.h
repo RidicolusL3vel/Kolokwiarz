@@ -9,7 +9,7 @@ class Question
 private:
     QString text;
     QStringList options;
-    int correctOprionIndex;
+    int correctOptionIndex;
 public:
     Question();
     virtual ~Question() = 0;

@@ -8,7 +8,7 @@ class Admin : public User
     friend class QuestionEditor;
 protected:
     QString username;
-    QString password; // Assuming password is stored as a hash or encrypted
+    QString password;
     int totalPoints;
     int totalGames;
     QDateTime lastLogin;

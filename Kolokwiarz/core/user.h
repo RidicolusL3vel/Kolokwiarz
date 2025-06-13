@@ -7,7 +7,7 @@ class User
 {
 protected:
     QString username;
-    QString password; // Assuming password is stored as a hash or encrypted
+    QString password;
     int totalPoints;
     int totalGames;
     QDateTime lastLogin;
@@ -29,7 +29,7 @@ public:
 
     virtual bool isAdmin() const { return false; }
 
-    virtual ~User() = default; // Virtual destructor for proper cleanup of derived classes
+    virtual ~User() = default;
 };
 
 #endif // USER_H

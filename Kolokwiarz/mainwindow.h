@@ -23,7 +23,7 @@ QT_END_NAMESPACE
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
-    friend class LoginWindow; // Allow LoginWindow to access private members
+    friend class LoginWindow;
 
 public:
     explicit MainWindow(QWidget *parent = nullptr);
